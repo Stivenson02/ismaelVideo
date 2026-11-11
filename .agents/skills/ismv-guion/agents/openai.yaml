@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Guion"
+  short_description: "Historias aprobadas convertidas en guiones para Reel"
+  default_prompt: "Usa $ismv-guion para convertir esta historia aprobada en un guion narrado."

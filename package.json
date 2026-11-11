@@ -1,0 +1,31 @@
+{
+  "name": "ismaelvideo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "remotion": "remotion studio src/video/index.ts",
+    "render:ismael-origin": "remotion render src/video/index.ts IsmaelOrigin public/videos/ismael-001-origen.mp4"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.542",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.542"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.542",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5"
+  }
+}

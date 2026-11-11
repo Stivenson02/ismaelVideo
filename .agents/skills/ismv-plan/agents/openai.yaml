@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Plan"
+  short_description: "Plan tecnico antes de implementar el episodio"
+  default_prompt: "Usa $ismv-plan para crear un plan de produccion para esta historia lista."

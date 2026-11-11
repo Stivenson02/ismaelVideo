@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Historia"
+  short_description: "Ideas biblicas a historias investigadas"
+  default_prompt: "Usa $ismv-historia con esta idea o pasaje para proponer historias fieles."

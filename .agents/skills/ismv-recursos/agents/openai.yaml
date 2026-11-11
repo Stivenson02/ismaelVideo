@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Recursos"
+  short_description: "Checklist, auditoria y prompts para recursos visuales"
+  default_prompt: "Usa $ismv-recursos para revisar los artes y preparar el checklist de este episodio."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Preparar episodio"
+  short_description: "Valida si el episodio esta listo para planear"
+  default_prompt: "Usa $ismv-preparar para validar esta historia para animatic o video final."

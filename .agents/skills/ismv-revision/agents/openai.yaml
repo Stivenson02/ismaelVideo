@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Revision"
+  short_description: "Revisa el animatic o render frente al plan"
+  default_prompt: "Usa $ismv-revision para revisar el resultado de este plan ejecutado."

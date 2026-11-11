@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Ejecute"
+  short_description: "Ejecuta el plan aprobado de una historia identificada"
+  default_prompt: "Usa $ismv-ejecute con HIST-### y ejecuta solo su plan aprobado."
