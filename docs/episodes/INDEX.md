@@ -4,6 +4,6 @@ El código `HIST-###` identifica una historia de forma estable desde su preparac
 
 | Código | Nombre | Documento | Estado | Objetivo | Plan |
 |---|---|---|---|---|---|
-| `HIST-001` | Agar: vista y escuchada | `docs/episodes/01-origen-de-ismael.md` | Primer borrador narrativo aprobado; pendiente de gate de producción | Por definir: animatic o video final | No creado |
+| `HIST-001` | Agar: vista y escuchada | `docs/episodes/01-origen-de-ismael.md` | Revisión aprobada; copy de entrega creado; publicación pendiente de derechos de voz TTS | Animatic audiovisual `review-02` | `docs/plans/HIST-001-plan.md` |
 
 Al crear una historia nueva, asignar el siguiente código libre y registrar aquí su documento y estado. Si un pedido usa un nombre, resolverlo contra este índice; si hay más de una coincidencia, pedir que elijan el código correcto.

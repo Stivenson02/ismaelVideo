@@ -30,11 +30,20 @@ El Reel mantiene una ventana de cámara de 1080 × 1920; el arte de fondo no est
 | Símbolo transparente | `public/assets/brand/ismael-symbol.png` | PNG transparente | Recibido desde el proyecto Ismael |
 | Símbolo variante clara | `public/assets/brand/ismael-symbol-light-variant.png` | PNG transparente | Recibido desde el proyecto Ismael |
 | Iconos de aplicación | `public/assets/brand/ismael-app-icon-*.png` | PNG | Recibidos desde el proyecto Ismael |
-| Narración episodio 01 | `public/assets/audio/narration/01-ismail-origin.wav` | WAV 48 kHz mono o estéreo | Pendiente de voz |
+| Voz de referencia episodio 01 | `public/assets/audio/narration/01-ismail-origin-reference.wav` | WAV PCM 48 kHz mono | Recibida; TTS de 30,35 s para ritmo de animatic; no aprobada para publicación |
+| Narración final episodio 01 | `public/assets/audio/narration/01-ismail-origin.wav` | WAV 48 kHz mono o estéreo | Pendiente de selección y aprobación de voz/licencia |
 | Música episodio 01 | `public/assets/audio/music/01-desert-theme.wav` | WAV/MP3 autorizado | Opcional |
-| Efectos episodio 01 | `public/assets/audio/sfx/` | WAV/MP3 autorizado | Opcional |
+| Sonido de cierre de marca | `public/assets/audio/sfx/mixkit-orchestral-happy-prompt-636.wav` | WAV, original 4,05 s | Original descargado de Mixkit, se conserva intacto ([licencia](https://mixkit.co/license/modal/sfxFree/)) |
+| Sting de cierre (uso) | `public/assets/audio/sfx/ismael-outro-sting.wav` | WAV 44,1 kHz estéreo, 2,90 s | Copia del original con salida suave; usado por `src/video/brand/IsmaelOutro.tsx` |
+| Efectos de ambiente episodio 01 | `public/assets/audio/sfx/` | WAV/MP3 autorizado | Opcionales |
 
 Las referencias visuales de otras historias que llegaron junto con los artes de Agar están organizadas en `public/assets/concepts/biblical-stories/` para retomarlas cuando se elija cada episodio.
+
+## Sets para animación limitada
+
+Para un cambio de expresión, agrupa las variantes bajo `characters/<personaje>/` con un nombre base y sufijos de expresión o número de pose. Registra en el checklist del episodio qué archivo es la base y el orden de aparición. Todas las variantes de un plano deben compartir dimensiones, encuadre, posición de rasgos, ropa, luz y fondo; no marques una variante como disponible hasta comprobar el archivo real. El primer plano actual de Agar es una referencia compuesta, no un set de tres expresiones terminado.
+
+Para diálogo con boca animada, guarda la base limpia y las formas de boca como piezas separadas con transparencia real y el mismo sistema de coordenadas. Documenta posición de anclaje, tamaño, orden de capas y qué forma corresponde al reposo. Si la base tiene la boca pintada y no existe una zona limpia, registra la limpieza como recurso pendiente: superponer bocas sobre el dibujo actual puede dejar rasgos duplicados. Consulta `docs/DIRECCION-VISUAL.md` para decidir cuándo usar estas dos técnicas.
 
 ## Nombres de capas
 Usa prefijos consistentes: `agar-head`, `agar-torso`, `agar-arm-upper-l`, `agar-arm-lower-l`, `agar-hand-l`, `messenger-head`, `messenger-arm-right`. Si el formato fuente tiene capas, nómbralas así antes de exportar. Cada pieza debe tener suficiente solape para que las uniones no se abran al girar.

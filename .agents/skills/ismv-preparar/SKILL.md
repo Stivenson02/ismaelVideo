@@ -15,10 +15,11 @@ Actúa como gate entre la preparación editorial/visual y la planificación téc
 ## Validaciones
 
 - Lee `AGENTS.md`, `docs/FLUJO-DE-TRABAJO.md`, `docs/DIRECCION-VISUAL.md`, la historia, el guion, `docs/ASSET-CATALOG.md`, el checklist de recursos y los spikes pertinentes.
-- Verifica que historia y guion estén aprobados por la persona y que no haya discrepancia conocida con `src/video/episodes/*/story.ts`.
+- Verifica que historia y guion estén aprobados por la persona. Busca discrepancias con `src/video/episodes/*/story.ts`: si la fuente narrativa aprobada es inequívoca, registra la alineación como tarea del plan; si hace falta una decisión editorial, marca `needs-review`.
 - Para `animatic`, acepta recursos en estado `animatic` si sus límites están anotados; permite voz de referencia o temporales si el animatic lo admite.
-- Para `video-final`, exige arte final revisado, cobertura y alfa adecuados, voz final, citas/referencias claras, CTA vigente, marca oficial y revisión de permisos de música/efectos.
-- Comprueba si falta alguna decisión que cambie el alcance, como diseño aprobado, duración, CTA o técnica visual.
+- Para `video-final`, exige arte final revisado para el gancho, la historia y el remate, cobertura y alfa adecuados, voz final, citas/referencias claras, CTA vigente si el guion lo incluye, marca oficial y revisión de permisos de música/efectos.
+- Comprueba que el guion aprobado defina la acción visual del gancho, su puente al relato, la imagen de enseñanza y la forma de entrar al cierre común; no inventes esas decisiones durante el plan.
+- Comprueba si falta alguna decisión que cambie el alcance, como diseño aprobado, duración, uso o ausencia de CTA y técnica visual.
 
 ## Resultado
 

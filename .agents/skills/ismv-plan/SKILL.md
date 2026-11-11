@@ -20,6 +20,8 @@ Guarda `docs/plans/<HIST-###>-plan.md`. Incluye:
 
 - identidad y objetivo (`animatic` o `video-final`), fuentes aprobadas y fuera de alcance;
 - estado de assets y límites que el plan debe respetar;
+- desglose temporal y visual de gancho, puente, historia, enseñanza, remate y placa, con recursos y transición de cada tramo; reserva una escena animada para el gancho y la imagen final acordada, sin fijar los 3–4 s como regla rígida;
+- cuando un plano aprobado use variantes de expresión o boca animada, secuencia de poses/formas, sincronía con la voz, archivos registrados, técnica de transición y revisión de saltos visuales; distingue diálogo del personaje de narración externa;
 - tareas en orden, agrupadas con etiquetas `HISTORY`, `ART`, `AUDIO`, `CODE`, `RENDER` o `REVIEW` cuando apliquen;
 - archivos/rutas concretos a crear o modificar, dependencias y decisiones técnicas;
 - criterios observables de aceptación y cómo se revisará el resultado;

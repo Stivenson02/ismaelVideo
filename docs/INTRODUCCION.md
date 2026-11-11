@@ -22,7 +22,7 @@ El flujo completo —idea, investigación, historia, guion, recursos, gate, plan
 - **Next.js:** panel de control local.
 - **Remotion:** composición, previsualización y render programático.
 - **React + TypeScript:** estructura reutilizable de escenas.
-- **Audio:** archivos locales. La voz queda por definir. Kokoro.js corre localmente, pero la ficha oficial del modelo actual solo enumera voces en inglés estadounidense y británico; no lo tomamos como solución de narración en español. Podemos evaluar motores locales con voces españolas —Piper es un candidato— o grabación humana. Revisar la muestra y la licencia del modelo de voz antes de adoptarlo.
+- **Audio:** archivos locales. HIST-001 tiene un TTS temporal para el animatic; la voz final de publicación queda por definir. Kokoro.js corre localmente, pero la ficha oficial del modelo actual solo enumera voces en inglés estadounidense y británico; no lo tomamos como solución de narración en español. Podemos evaluar motores locales con voces españolas —Piper es un candidato— o grabación humana. Revisar la muestra y la licencia del modelo de voz antes de adoptarlo.
 
 No se usa captura de pantalla para exportar. Remotion genera el video directamente. Next y Remotion son herramientas locales; el MP4 y el repositorio se pueden mover a otro equipo.
 
@@ -33,7 +33,7 @@ Remotion publica una licencia gratuita para personas y equipos de hasta tres int
 Kokoro.js funciona localmente con `kokoro-js`, pero la [ficha oficial del modelo](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX) solo lista voces estadounidenses y británicas en inglés. No lo instalamos como voz del Reel en español.
 
 ## Estado actual
-El flujo de producción vive en `docs/FLUJO-DE-TRABAJO.md` y sus siete skills ISMV están en `.agents/skills/`. El episodio 01 tiene un primer borrador narrativo y recursos visuales recopilados. `SPIKE-001` documenta qué piezas sirven para animatic y qué fondos deben limpiarse o regenerarse para el montaje final. Antes de planear código, hay que alinear los beats de `story.ts` con el guion aprobado y elegir el objetivo: animatic o video final.
+El flujo de producción vive en `docs/FLUJO-DE-TRABAJO.md`: ocho skills llevan la historia desde la idea hasta el cierre de entrega y `ismv-producciones` lista su estado. HIST-001 tiene guion y render `review-02` aprobados por la persona. Antes de publicar se deben confirmar los derechos de uso comercial de la voz TTS o sustituirla por una narración autorizada.
 
 
 

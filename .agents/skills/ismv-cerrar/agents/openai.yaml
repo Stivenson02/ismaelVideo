@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Cerrar"
+  short_description: "Prepara el copy y la entrega local del video aprobado"
+  default_prompt: "Usa $ismv-cerrar HIST-001 para preparar el copy y la entrega del video revisado."

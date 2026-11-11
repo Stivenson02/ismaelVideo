@@ -11,7 +11,8 @@ Evalúa el resultado de una ejecución concreta y entrega hallazgos accionables.
 
 - Resuelve una sola historia por código `HIST-###` o nombre inequívoco. Lee su registro, el plan aprobado, el guion vigente, `docs/DIRECCION-VISUAL.md` y los criterios del objetivo.
 - Inspecciona el archivo real de animatic/render o los artefactos disponibles; no declares revisado lo que no pudiste abrir.
-- Revisa fidelidad bíblica y distinción entre cita/paráfrasis, sincronía y claridad de narración, legibilidad móvil, ritmo, continuidad de personajes/escenario, movimientos de cámara, bordes/costuras, audio, CTA y cierre de marca según el objetivo.
+- Revisa fidelidad bíblica y distinción entre cita/paráfrasis, sincronía y claridad de narración, legibilidad móvil, ritmo, continuidad de personajes/escenario, movimientos de cámara, bordes/costuras, audio, CTA si aplica y cierre de marca según el objetivo. Comprueba que el gancho tenga una acción animada legible, que su puente al relato funcione y que la enseñanza/remate entren con sentido a la placa común.
+- En planos con variantes de expresión o boca animada, revisa saltos de encuadre/luz, caras dobles durante el fundido, bordes de piezas, legibilidad de la emoción y sincronía de la boca con el diálogo del personaje.
 - Prioriza hallazgos por impacto y enlaza el tiempo/escena o archivo cuando sea posible. Distingue bloqueo de mejora opcional.
 - No cambies el guion, arte o código durante la revisión salvo que la persona pida corregirlo. No corras pruebas no solicitadas.
 

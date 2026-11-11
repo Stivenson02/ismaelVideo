@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Producciones"
+  short_description: "Lista historias, estados, bloqueos y siguientes pasos"
+  default_prompt: "Usa $ismv-producciones para mostrar la tabla actual de producciones."
