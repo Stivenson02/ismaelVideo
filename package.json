@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack --port 3007",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "remotion": "remotion studio src/video/index.ts",
-    "render:ismael-origin": "remotion render src/video/index.ts IsmaelOrigin public/videos/ismael-001-origen.mp4"
+    "render:ismael-origin": "remotion render src/video/index.ts IsmaelOrigin public/videos/ismael-001-origen.mp4",
+    "render:abraham-abimelech": "remotion render src/video/index.ts AbrahamAbimelech public/videos/ismael-002-abraham-abimelec-review-06.mp4"
   },
   "dependencies": {
     "@remotion/player": "4.0.542",

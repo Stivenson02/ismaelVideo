@@ -27,4 +27,12 @@ Guarda `docs/plans/<HIST-###>-plan.md`. Incluye:
 - criterios observables de aceptación y cómo se revisará el resultado;
 - riesgos, supuestos y puntos que requieren detenerse.
 
+## Previa visual del plan
+
+- Además del Markdown, mantén los datos visuales de las escenas que la interfaz local consume en `src/app/historias/[code]/storyboard.tsx` (o en un manifiesto importado por esa ruta). Para cada beat registra: duración, narración, fondo/arte existente, personajes y poses inicial/final, movimiento, transición y límites/placeholder.
+- Usa solo rutas existentes bajo `public/assets/`. Marca en pantalla recursos provisionales o pendientes; no generes arte ni declares aprobaciones nuevas.
+- La previa es un storyboard ligero del panel, no un MP4 ni una composición Remotion. Permite recorrer escenas, comparar poses inicial/final y anotar ajustes locales antes de ejecutar.
+- No ejecutes código ni levantes el servidor al planear. La persona lo inicia cuando quiera; el panel usa `http://localhost:3007`.
+- Si el storyboard y el plan discrepan, el plan aprobado y el guion son fuente de verdad; actualiza la previa para alinearla.
+
 No edites código, no generes arte final, no arranques servidores, no ejecutes pruebas y no marques el plan aprobado. Registra `plan-draft` en el índice; la persona debe aprobar el plan antes de `ismv-ejecute`.

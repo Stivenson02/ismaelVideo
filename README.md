@@ -5,10 +5,12 @@ Estudio creativo local para producir Reels narrativos de Ismael con ilustración
 ## Qué estamos construyendo
 
 - Next.js es el panel local para organizar episodios y su estado.
+- El panel se levanta con `npm run dev` en `http://localhost:3007`; su inicio muestra producciones desde `docs/episodes/INDEX.md` y las historias con plan pueden tener un storyboard previo a ejecución.
 - Remotion es el escenario de composición, la previsualización y el render MP4.
 - Las escenas usan ilustraciones propias en capas para reutilizar personajes, fondos y objetos.
 - El montaje prioriza encuadres, acercamientos y movimientos suaves; no requiere animar cada cuadro.
 - La voz y los efectos se preparan como archivos y se sincronizan en la composición.
+- La narración se genera siempre en [Fish Audio, texto a voz](https://fish.audio/es/app/text-to-speech/) y se descarga al proyecto; los derechos de cada generación se registran antes de publicar.
 - `docs/` es la fuente de contexto del proyecto para personas y otras AIs.
 
 ## Primera pieza

@@ -13,7 +13,7 @@ El flujo completo —idea, investigación, historia, guion, recursos, gate, plan
 1. **Desglose visual:** beat, duración, plano, personaje, acción, texto/audio y artes necesarios.
 2. **Arte:** usar o preparar personajes, fondos, objetos y marca según el catálogo; la persona revisa artes nuevos.
 3. **Animatic:** montar siluetas/ilustraciones en Remotion y revisar ritmo antes de pulir.
-4. **Audio:** grabación humana o TTS local después de elegir y probar una voz. Música/efectos deben ser propios o contar con permiso de uso.
+4. **Audio:** generar la narración en Fish Audio después de aprobar el guion; descargar el archivo local y sincronizarlo con escenas y subtítulos. Música/efectos deben ser propios o contar con permiso de uso.
 5. **Animación y subtítulos:** sincronizar la voz, mover piezas y cámara, mantener texto en zona segura.
 6. **Render y revisión:** generar el MP4 del objetivo aprobado y revisar encuadre móvil, pronunciación, subtítulos, marca y audio.
 7. **Entrega:** guardar el MP4 final en `public/videos/` y registrar la versión aprobada.
@@ -22,7 +22,7 @@ El flujo completo —idea, investigación, historia, guion, recursos, gate, plan
 - **Next.js:** panel de control local.
 - **Remotion:** composición, previsualización y render programático.
 - **React + TypeScript:** estructura reutilizable de escenas.
-- **Audio:** archivos locales. HIST-001 tiene un TTS temporal para el animatic; la voz final de publicación queda por definir. Kokoro.js corre localmente, pero la ficha oficial del modelo actual solo enumera voces en inglés estadounidense y británico; no lo tomamos como solución de narración en español. Podemos evaluar motores locales con voces españolas —Piper es un candidato— o grabación humana. Revisar la muestra y la licencia del modelo de voz antes de adoptarlo.
+- **Audio:** [Fish Audio, texto a voz](https://fish.audio/es/app/text-to-speech/) es la herramienta fija elegida para narrar los episodios. El audio descargado se trabaja como archivo local. HIST-001 tiene una voz Fish temporal; antes de publicar cualquier episodio hay que acreditar los derechos comerciales de la generación y la voz usadas. El procedimiento y las fuentes están en `public/assets/audio/README.md`.
 
 No se usa captura de pantalla para exportar. Remotion genera el video directamente. Next y Remotion son herramientas locales; el MP4 y el repositorio se pueden mover a otro equipo.
 
@@ -30,10 +30,10 @@ No se usa captura de pantalla para exportar. Remotion genera el video directamen
 
 Remotion publica una licencia gratuita para personas y equipos de hasta tres integrantes, incluso para uso comercial, según sus condiciones actuales. Para equipos más grandes puede aplicar una licencia paga. Revisa la [página oficial de licencia](https://www.remotion.dev/docs/license/pricing) antes de ampliar el equipo o cambiar el uso del estudio. No hay costo por render local en el flujo de este proyecto mientras aplique esa elegibilidad.
 
-Kokoro.js funciona localmente con `kokoro-js`, pero la [ficha oficial del modelo](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX) solo lista voces estadounidenses y británicas en inglés. No lo instalamos como voz del Reel en español.
+La elección de Fish Audio reemplaza la evaluación pendiente de motores locales de narración. La composición y el render siguen funcionando localmente con el audio descargado.
 
 ## Estado actual
-El flujo de producción vive en `docs/FLUJO-DE-TRABAJO.md`: ocho skills llevan la historia desde la idea hasta el cierre de entrega y `ismv-producciones` lista su estado. HIST-001 tiene guion y render `review-02` aprobados por la persona. Antes de publicar se deben confirmar los derechos de uso comercial de la voz TTS o sustituirla por una narración autorizada.
+El flujo de producción vive en `docs/FLUJO-DE-TRABAJO.md`: ocho skills llevan la historia desde la idea hasta el cierre de entrega y `ismv-producciones` lista su estado. HIST-001 tiene guion y render `review-02` aprobados por la persona. Antes de publicar se deben confirmar los derechos de uso comercial de su voz Fish o regenerarla en Fish bajo condiciones autorizadas.
 
 
 

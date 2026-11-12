@@ -31,7 +31,7 @@ El copy conserva el enfoque del guion aprobado y no presenta una paráfrasis com
 
 ## Pendiente antes de publicar
 
-El video contiene la voz TTS de referencia generada con Fish Audio. La página oficial del plan gratuito es contradictoria: su listado menciona “uso comercial”, mientras que la FAQ lo limita a uso personal/no comercial y los términos generales también restringen el servicio gratuito a uso personal y no comercial. Antes de publicar, confirmar con Fish Audio que esa generación puede usarse en un Reel de marca; si no, reemplazar la voz por una grabación o una generación con derechos adecuados y volver a revisar la sincronía.
+El video contiene la voz TTS de referencia generada con Fish Audio. La página oficial del plan gratuito es contradictoria: su listado menciona “uso comercial”, mientras que la FAQ lo limita a uso personal/no comercial y los términos generales también restringen el servicio gratuito a uso personal y no comercial. Antes de publicar, confirmar con Fish Audio que esa generación puede usarse en un Reel de marca; si no, regenerar la voz en Fish con condiciones y voz de uso comercial claras y volver a revisar la sincronía. Fish Audio es la herramienta de narración elegida para los episodios siguientes.
 
 Fuentes: [planes y FAQ de Fish Audio](https://fish.audio/es/plan/) · [términos del servicio](https://fish.audio/terms/).
 

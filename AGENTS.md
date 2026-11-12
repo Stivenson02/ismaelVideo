@@ -30,6 +30,7 @@ Ayudar a producir Reels bíblicos narrativos para la marca Ismael, de forma loca
 - Si un arte todavía no existe, conserva un placeholder bien visible; no sustituyas personajes o el logo con imágenes inventadas.
 - Mantén el cierre de marca en todos los Reels y reserva su duración en la composición.
 - Distingue las citas bíblicas del texto narrado y de la dramatización. No presentes paráfrasis como cita textual.
+- Genera la narración de los episodios con [Fish Audio, texto a voz](https://fish.audio/es/app/text-to-speech/), herramienta fija elegida por la persona. Guarda el audio descargado localmente y registra voz, fecha, plan y derechos; una referencia de montaje no se declara publicable sin permiso comercial claro.
 - Los artes y el contenido narrativo pasan por revisión del usuario antes de dar un episodio por finalizado.
 
 ## Formato del Reel

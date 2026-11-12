@@ -6,6 +6,18 @@ Los Reels de Ismael usan **animación 2D minimalista de recortes**, con una atm�
 
 La imagen debe ser sencilla de producir y fácil de leer en pantalla vertical. El misterio acompaña el relato; no debe volverlo lúgubre, violento ni confuso.
 
+## Base común para prompts de diseño
+
+Todo prompt para generar un personaje, prop, fondo, frame guía o portada debe incluir esta dirección común:
+
+> Dirección común = Animación 2D minimalista de recortes, apariencia de ilustración tradicional hecha con formas planas y capas separables. Atmósfera bíblica cinematográfica, misteriosa y emotiva, contraste de sombras profundas con acentos de luz cálida. Detalle sencillo, siluetas claras, composición legible en pantalla vertical. Sin realismo fotográfico, sin 3D, sin anime, sin texto, sin letras, sin logotipos, sin elementos modernos. Mantener coherencia visual con las imágenes de referencia.
+
+- La descripción común define el lenguaje visual y se copia completa en cada prompt; no reemplaza la descripción del sujeto, escena, encuadre ni requisitos técnicos.
+- Los prompts incluyen una ficha escrita y estable de cada personaje (rasgos, vestuario, paleta y edad aparente), tomada del episodio. No es requisito adjuntar imágenes de personajes para cada generación.
+- La descripción común por sí sola no garantiza identidad exacta entre generaciones. Para una secuencia que depende de que el rostro no cambie —como variantes de expresión registradas— se trabaja desde un mismo diseño base o se generan las variantes juntas; no se presenta continuidad exacta como garantizada por texto.
+- La frase “sin elementos modernos” se aplica a los beats bíblicos. Si el guion aprobado tiene una escena cotidiana actual, el prompt declara esa excepción de forma explícita y limita lo moderno únicamente a esa escena; conserva el mismo lenguaje 2D, luz y paleta.
+- No generar texto ni logotipos dentro del arte. Añadir subtítulos, títulos de portada y el símbolo oficial como capas editables después.
+
 ## Técnicas de animación
 
 - Construir escenas con planos ilustrados apilados: fondo, plano medio, personajes y primer plano.
@@ -16,12 +28,28 @@ La imagen debe ser sencilla de producir y fácil de leer en pantalla vertical. E
 - Mantener pocos detalles, siluetas legibles y composición con espacio para subtítulos y textos.
 - Reservar cambios de luz, sombra y movimiento para los momentos narrativos importantes.
 
+### Hojas de expresiones / sprites faciales
+
+Para primeros planos con cambios de emoción, se puede preparar una hoja de expresiones (sprite sheet): varias versiones del mismo rostro en una cuadrícula de 2 × 3 o 3 × 3. Cada celda contiene una expresión recortable; en montaje se alterna o superpone la cara sobre una base fija del personaje para lograr animación limitada sin redibujar el cuerpo entero.
+
+- Diseñar primero una cara base y producir las expresiones como un mismo set o editándolas desde esa base. Mantener idénticos tamaño, ángulo, posición de ojos/nariz/boca, iluminación y estilo. Cambiar solo los rasgos que expresan la emoción.
+- Definir antes de generar la cuadrícula el número de celdas, márgenes y tamaño de cada celda. Usar 6 expresiones (2 × 3) cuando se necesite un set corto, o hasta 9 (3 × 3) si la secuencia realmente pide más matices. No apretar rostros hasta que sean difíciles de recortar.
+- Entregar preferiblemente PNG con alfa real y una expresión por archivo lista para montaje, además de la hoja completa como referencia. Si se usa fondo blanco para facilitar la generación o el recorte, tratarlo como fondo opaco: no es transparencia. Recortar por celda y limpiar el blanco de los bordes antes de superponer; halos claros pueden delatar el montaje sobre un fondo oscuro.
+- Registrar orden de lectura, nombre de cada expresión, dimensiones del lienzo/celda, punto de anclaje y archivo base. Hacer que todas las variantes encajen en la misma posición sin reescalado manual distinto.
+- La base del plano puede ser el cuerpo/ropa sin rostro, una cabeza limpia o una cara neutra. Elegir la mínima pieza que necesite cambiar: si la cámara queda en primer plano, puede bastar con sustituir solo el rostro; no rehacer un cuerpo entero por cada emoción.
+- No usar nueve expresiones por defecto: el set debe responder a cambios narrativos reconocibles y pausas de voz. Una transición breve y legible suele funcionar mejor que alternar celdas muy rápido.
+- Antes de darlo por utilizable, probar el recorte y la superposición sobre el fondo real del plano, comprobar bordes, escala, mirada y saltos entre expresiones. La hoja es una fuente de piezas, no el arte final del plano.
+
+Esta técnica es una opción para episodios futuros. En HIST-003 puede explorarse para un primer plano de Labán, siempre después de aprobar el guion y revisar el diseño del personaje; no implica rehacer automáticamente los artes de episodios anteriores.
+
 ## Reglas técnicas de capas y cámara
+
+Para escoger entre corte directo, disolvencia superpuesta, oclusión, luz, movimiento de cámara y otras opciones, consulta el [catálogo de transiciones visuales](technical/TRANSICIONES-VISUALES.md). Evitar usar el dip a negro como paso automático entre planos.
 
 Resultado del [SPIKE-001](technical/spikes/SPIKE-001-resultado.md); allí están el detalle, los ejemplos y la fórmula completa.
 
 - **Cámara multiplano:** una sola cámara (x, y, zoom) mueve cada capa según su profundidad `p`: cielo ≈ 0,1, montañas ≈ 0,3, plano medio ≈ 0,7, personajes 1,0 y primer plano ≈ 1,3.
-- **Tamaño de fondo:** calcular los extremos del encuadre de cada capa a lo largo de todo el plano, añadir margen y luego la densidad de píxeles necesaria para el zoom máximo. Como estimación conservadora por eje: `(ventana + p·|recorrido|)/s_min + 2m`, con `m ≈ 48 px` como punto de partida. La fórmula exacta y sus supuestos están en el spike. Las capas deben compartir coordenadas y escala visual; pueden exportarse recortadas si se registran sus offsets.
+- **Tamaño de fondo:** antes de pedirlo, calcular los extremos del encuadre de cada capa a lo largo de todo el plano, añadir margen y densidad de píxeles para el zoom máximo. Como estimación conservadora por eje: `(ventana + p·|recorrido|)/s_min + 2m`, con `m ≈ 48 px` como punto de partida. La fórmula exacta está en el spike. El prompt especifica ancho y alto mínimos calculados y cobertura; “panorámico” por sí solo no es una instrucción suficiente. Para un plano vertical fijo sin recorrido, pedir al menos 1080 × 1920; con movimiento, pedir las dimensiones calculadas, que pueden excederlo en ambos ejes. Las capas deben compartir coordenadas y escala visual; pueden exportarse recortadas si se registran sus offsets.
 - **Solape:** cada capa lejana continúa por detrás de la cercana; nunca cortar una capa justo donde empieza la siguiente.
 - **Transparencia:** PNG RGBA con alfa real y bordes suaves. Un tablero gris/blanco dentro de los píxeles no es transparencia.
 - **Personajes:** pose sostenida + respiración + balanceo como base; separar piezas con pivote y solape solo cuando haya un gesto. Ocultar los pies en caminatas limitadas.

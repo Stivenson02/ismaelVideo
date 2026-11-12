@@ -11,6 +11,7 @@ Prepara el paquete local de entrega de una historia revisada. La salida principa
 
 - Recibe un código `HIST-###` o un nombre inequívoco registrado en `docs/episodes/INDEX.md`.
 - Debe existir un render concreto y una revisión aprobada por la persona. Si la revisión está pendiente, no marques el video como aprobado; informa el paso de revisión requerido.
+- Busca la portada vertical aprobada para Instagram en el episodio y confirma su ruta. Si todavía no existe, incluye la portada como recurso pendiente en el documento de entrega; no inventes una aprobación ni marques el paquete social completo.
 
 ## Fuentes
 
@@ -25,6 +26,7 @@ Crea `docs/deliveries/<HIST-###>-copy-redes.md` con:
 - código y título de la historia;
 - estado de revisión y cualquier condición pendiente para publicación;
 - ruta relativa al MP4 dentro del proyecto y ruta absoluta de Windows, claramente identificadas como rutas locales y no URL pública;
+- ruta de la portada visual aprobada para Instagram, o el estado pendiente si falta;
 - un copy principal listo para copiar, con gancho, enseñanza bíblica, referencia y CTA vigente;
 - hashtags breves y pertinentes, si aportan al canal;
 - la fecha de preparación.
@@ -34,6 +36,7 @@ Escribe en el idioma y tono de la marca. Conserva el guion aprobado; no conviert
 ## Gate de publicación
 
 - Distingue aprobación creativa del permiso para publicar cada arte, música, efecto o voz.
+- El paquete de publicación incluye una portada vertical propia del episodio. La imagen guía puede vivir en `public/assets/concepts/episodes/<episodio>/`; el arte aprobado para publicar va en `public/assets/social/<episodio>/` y usa el símbolo oficial, nunca un logo generado.
 - Si el informe o las fuentes registran derechos sin confirmar, crea el documento de copy, pero etiqueta el estado **listo para revisión de copy; publicación pendiente** y especifica el recurso y la decisión pendiente. No declares el MP4 listo para publicar.
 - No elimines, alteres ni sustituyas el render aprobado. No subas el video, no publiques el copy, no envíes mensajes y no registres el episodio como publicado.
 - La persona conserva la decisión final para aprobar el copy y publicar. Actualiza el índice solo para reflejar con precisión la entrega del copy y bloqueos, nunca para inferir una aprobación o publicación.
