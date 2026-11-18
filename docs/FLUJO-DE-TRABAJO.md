@@ -13,11 +13,29 @@ Cada episodio tiene un objetivo de entrega explícito: **animatic** o **video fi
 
 ## Estructura narrativa y visual del Reel
 
-1. **Gancho cotidiano:** una pregunta o situación humana reconocible abre el video. El guion reserva una mini escena animada para acompañar la voz (orientativamente 3–4 segundos, ajustables al ritmo real). Puede mostrar la acción de forma literal o sugerirla visualmente. Registra por separado la narración, la acción visible y el puente hacia el relato bíblico; un subtítulo por sí solo no reemplaza la escena.
-2. **Historia bíblica:** relato breve con sus propios beats, referencias y escenas. El puente desde el gancho debe tener sentido narrativo y respetar el pasaje; una analogía cotidiana no se presenta como equivalente al sufrimiento o a los hechos bíblicos.
-3. **Enseñanza o aplicación:** conclusión que nace del relato. Reserva una imagen o acción final, bíblica o conectada con el gancho, según lo que cierre mejor la idea.
-4. **Remate del episodio:** decide en el guion si hay invitación hablada, una última acción visual, un regreso al gancho o una combinación breve. Documenta cómo esa acción transita a la placa de marca. No fuerces un CTA cuando corte el sentido del relato; si se usa, debe estar aprobado y vigente.
-5. **Cierre de marca:** placa y sonido comunes de Ismael, después del remate. Su identidad y duración se mantienen según `docs/DIRECCION-VISUAL.md`; la transición de entrada puede variar por episodio.
+Estructura de retención aprobada por la persona el 2026-11-17, a partir de [`docs/investigacion/RETENCION-REELS.md`](investigacion/RETENCION-REELS.md). Duración objetivo: **~30 s** (guía 30–40 s), una sola pregunta central y ~70–100 palabras.
+
+1. **Gancho (0–3 s):** abre con una de dos opciones, nunca con una pregunta genérica de autoayuda:
+   - **caso moderno concreto** (preferido por la persona desde 2026-11-17): una escena del día a día con una persona, una acción y un conflicto visibles, para que la audiencia se identifique;
+   - **el momento más tenso del relato**.
+
+   El caso moderno necesita un **puente** de una frase hacia la historia, que no equipare la molestia cotidiana con el sufrimiento bíblico. Se apilan tres capas:
+   - **imagen:** acción o rostro legible, que se entienda sin sonido;
+   - **frase hablada:** contradicción, sorpresa o pregunta concreta;
+   - **título en pantalla:** 3–6 palabras, distinto de la voz.
+
+   Sin logo, saludo ni plano de establecimiento lento. La sorpresa de la parte bíblica debe salir del texto.
+2. **Conflicto (antes del segundo 5):** quién sufre, qué pierde y quién tiene el poder.
+3. **Giros:** cada tramo empieza con *pero / así que / entonces*, no con "y después". Hay un re-gancho cada 5–8 s.
+4. **Revelación (último ~15 %):** paga lo que prometía el gancho. Es el clímax visual y emocional.
+5. **Remate en bucle:** la última frase enlaza con la primera, para que la repetición se sienta continua. La enseñanza cabe en **una línea**, hablada o en pantalla; no es un bloque aparte. **Sin CTA hablado:** la invitación a seguir va en el copy de la publicación (`ismv-cerrar`).
+6. **Cierre de marca (~1 s):** sting y símbolo de Ismael integrados sobre el último plano, según `docs/DIRECCION-VISUAL.md`.
+
+**Vocabulario sensible para plataformas:** no usar "morir", "muerte", "matar", "quemar" ni términos de violencia explícita en la voz ni en pantalla. Parafrasear de forma fiel y menos explícita ("quedó viuda", "ordenó castigarla") y anotar la atenuación en las notas editoriales. Las citas textuales que contengan esas palabras se evitan o se recortan.
+
+Ritmo visual: un evento visual cada 2–3 s (corte, movimiento de cámara, gesto con sprite, expresión, capa o texto clave), alternando escalas de plano. Audio: voz sin silencios muertos, ambiente, efectos en los giros y música con licencia.
+
+HIST-001 y HIST-002 se aprobaron con la estructura anterior (gancho cotidiano, enseñanza, CTA y placa de 3 s) y no se rehacen automáticamente.
 
 El documento del episodio separa el **texto narrado** del **desglose visual**. Para cada beat visual anota duración estimada, acción, recursos y transición. La persona revisa el enfoque, el guion y los artes antes de tratarlos como aprobados.
 

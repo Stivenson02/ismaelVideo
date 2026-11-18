@@ -86,18 +86,21 @@ Partir de paisajes terrosos y apagados para los escenarios, con sombras profunda
 
 ## Cierre de marca reutilizable
 
-- Todos los Reels terminan con la misma placa animada de Ismael, después del remate del episodio (con invitación hablada si el guion la incluye). Mantener su duración entre 2 y 3 segundos.
-- Usar un fondo oscuro cálido y sencillo, con un resplandor tenue detrás del símbolo oficial claro de Ismael. No recrear ni deformar el logo.
-- Mantener la animación contenida y consistente: fundido del fondo, entrada suave del símbolo con un leve acercamiento y pausa final para que se reconozca.
-- Sincronizar el mismo sonido breve de marca con la aparición del símbolo. El sonido puede durar hasta 3 segundos; conservar el original descargado y documentar la licencia. No sustituirlo por un efecto distinto en cada episodio.
-- La placa y el sonido forman parte de una plantilla reutilizable común a todos los episodios; la transición de entrada y el CTA hablado, cuando se use, pueden variar según la historia y el estado de la app.
-- Sonido elegido para la firma recurrente: `public/assets/audio/sfx/mixkit-orchestral-happy-prompt-636.wav`. Su duración original es 4,05 segundos; preparar una versión de uso de máximo 3 segundos con salida suave. La persona aprobó usarlo como sonido común; revisar que el recorte y la mezcla funcionen con la placa en el render de revisión.
+- Todos los Reels terminan con la marca de Ismael después del remate. **Desde 2026-11-17 (decisión de la persona, ver `docs/investigacion/RETENCION-REELS.md`):** sting y símbolo de **~1 s**, integrados sobre el último plano y sin pantalla negra aparte, para no romper el bucle. No hay CTA hablado; la invitación va en el copy. HIST-001 y HIST-002 conservan su placa aprobada de 3 s.
+- Sobre el último plano del episodio: resplandor tenue y oscurecimiento parcial detrás del símbolo oficial claro de Ismael. No recrear ni deformar el logo. La placa de 3 s con fondo oscuro cálido propio es la de HIST-001 y HIST-002.
+- Mantener la animación contenida y consistente: entrada suave del símbolo con un leve acercamiento y una pausa breve para que se reconozca.
+- Sincronizar el mismo sonido de marca con la aparición del símbolo. Para el sting de ~1 s, preparar una versión corta (≈1–1,5 s con salida suave) del mismo sonido; conservar el original descargado y documentar la licencia. No sustituirlo por un efecto distinto en cada episodio.
+- El sting y el sonido forman parte de una plantilla reutilizable común a todos los episodios; la transición de entrada puede variar según la historia.
+- Sonido elegido para la firma recurrente: `public/assets/audio/sfx/mixkit-orchestral-happy-prompt-636.wav` (4,05 s originales). Existe una versión de hasta 3 s para la placa anterior; la versión de ~1 s se prepara en el plan del primer episodio que la use. La persona aprobó usarlo como sonido común; revisar que el recorte y la mezcla funcionen en el render de revisión.
+- **Marca de agua (opcional, pendiente de diseño):** el símbolo de Ismael pequeño y semitransparente durante el video, fuera de las zonas de interfaz. El logo propio no reduce el alcance en Instagram.
 
 ## Aplicación en el flujo
 
 - **Ideas e investigación:** no inventar imágenes como hechos bíblicos; separar lo que narra el texto de las decisiones visuales.
-- **Guion:** escribir para una narración clara; no meter indicaciones de cámara o arte en el texto narrado. Registrar aparte la mini escena del gancho, el puente al relato, la imagen de enseñanza y el remate que conduce a la placa.
-- **Gancho visual:** dar a la pregunta o situación cotidiana una acción animada breve, literal o evocadora. Su duración orientativa es de 3–4 segundos, ajustada a la voz. Preparar solo los personajes, fondos y objetos que esa acción requiera, con lectura inmediata en móvil.
+- **Guion:** escribir para una narración clara; no meter indicaciones de cámara o arte en el texto narrado. Registrar aparte la escena del gancho, el título en pantalla, los giros, la revelación y el remate en bucle que conduce al sting de marca (estructura en `docs/FLUJO-DE-TRABAJO.md`).
+- **Gancho visual:** el primer fotograma muestra el caso moderno concreto (con la excepción explícita de "sin elementos modernos" solo para esa escena) o el momento más tenso del relato, con acción o rostro legible, que se entienda sin sonido y funcione como portada. Duración 0–3 s. Sin plano de establecimiento lento ni personaje diminuto. Preparar solo los personajes, fondos y objetos que esa acción requiera.
+- **Ritmo:** un evento visual cada 2–3 s (corte, movimiento de cámara, gesto con sprite, expresión, capa o texto clave), alternando escalas de plano. Los sprites marcan momentos (gancho, reacción a cada giro, revelación) y no deben mover todo de forma constante. Sobre animación limitada con sprites (12 fps en "doses", anticipación y asentamiento, contraste de movimiento), ver §4.3 de `docs/investigacion/RETENCION-REELS.md`.
+- **Zonas seguras (1080 × 1920):** dejar libres ~250 px arriba, ~670 px abajo y ~120 px a la derecha. Rostros y acción en el tercio central; subtítulos por encima del tercio inferior.
 - **Desglose y recursos:** traducir cada beat a planos, capas, poses y elementos realmente necesarios. Evitar pedir arte que no se usa.
 - **Arte:** preparar capas reutilizables y fondos del tamaño que requiera el movimiento de cámara; dejar vacíos donde irán personajes y textos.
 - **Producción:** buscar profundidad con desplazamientos de capas, movimientos suaves y encuadres; no añadir efectos por decoración.
