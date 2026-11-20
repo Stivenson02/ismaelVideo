@@ -51,3 +51,4 @@
 .embedded-board .storyboard-heading{display:none}
 .embedded-board .storyboard-page{padding:0}
 @media(max-width:800px){.story-detail{padding:20px 16px}.video-layout{grid-template-columns:1fr}.video-frame{max-height:70vh;margin:0 auto;width:min(100%,360px)}}
+.youtube-section{margin-top:34px}.youtube-intro{font-size:10px;line-height:1.6;color:#858277;margin:-6px 0 14px;max-width:680px}.status-study{background:#efe7d6;color:#8a7346}.youtube-section .production-index{color:#c9b48a}

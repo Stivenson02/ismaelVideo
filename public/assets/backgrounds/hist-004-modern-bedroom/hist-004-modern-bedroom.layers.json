@@ -1,0 +1,41 @@
+{
+  "set": "hist-004-modern-bedroom",
+  "source": "art-inbox/hist-004/FM",
+  "generated": "2026-11-19",
+  "size": {
+    "width": 1632,
+    "height": 2176
+  },
+  "layers": [
+    {
+      "file": "hist-004-modern-bedroom-l0.png",
+      "key": "opaque",
+      "opaque": true,
+      "coverage": 1.0,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "hist-004-modern-bedroom-l1.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.934,
+      "align": {
+        "dx": -0.09,
+        "dy": -0.53,
+        "scale": 0.9995,
+        "rotDeg": 0.012,
+        "cc": 0.9962
+      },
+      "depth": null
+    }
+  ],
+  "stackVsFull": 0.0179
+}

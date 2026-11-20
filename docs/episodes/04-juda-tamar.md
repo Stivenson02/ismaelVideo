@@ -1,10 +1,10 @@
 # HIST-004 — Tamar, Judá y las pruebas que no pudo negar
 
-**Estado:** enfoque aprobado por la persona (2026-11-17): promesa incumplida de Judá + ironía de las pruebas, con el ángulo de la decisión difícil de Tamar. Guion **v2 `script-approved`** por la persona (2026-11-17): gancho con un caso moderno y sin la palabra "morir", a pedido de la persona. La v1 aprobada queda como referencia. Citas de Gn 38:25–26 confirmadas contra RVR1960 (Bible.com, 2026-11-17). Etapa actual: recursos — checklist y prompts en [`04-juda-tamar-recursos.md`](04-juda-tamar-recursos.md).
+**Estado:** enfoque aprobado por la persona (2026-11-17): promesa incumplida de Judá + ironía de las pruebas, con el ángulo de la decisión difícil de Tamar. Guion **v2 `script-approved`** por la persona (2026-11-17): gancho con un caso moderno y sin la palabra "morir", a pedido de la persona. La v1 aprobada queda como referencia. Citas de Gn 38:25–26 confirmadas contra RVR1960 (Bible.com, 2026-11-17). Piezas y voz procesadas en preproducción y aprobadas para el animatic (2026-11-19). **Animatic `review-01` aprobado por la persona (2026-11-20)** y entregado para Instagram y YouTube Shorts (`docs/deliveries/HIST-004-copy-redes.md`); publicación pendiente: la voz es de la cuenta gratuita de Fish y hay que regenerarla en un plan pago; falta aprobar la portada. Recursos en [`04-juda-tamar-recursos.md`](04-juda-tamar-recursos.md) y hoja de animación en [`04-juda-tamar-preproduccion.md`](04-juda-tamar-preproduccion.md).
 **Idea original:** `docs/ideas/juda-y-tamar.md`
 **Pasaje principal:** [Génesis 38:6–30, RVR1960](https://www.bible.com/es/bible/149/GEN.38.RVR1960)
 **Contexto literario:** Génesis 38 aparece entre el relato de José vendido (Gn 37) y su historia en Egipto (Gn 39).
-**Objetivo de entrega:** por decidir después de aprobar historia y guion
+**Objetivo de entrega:** `animatic`, aprobado por la persona el 2026-11-20 para publicarse en Instagram (Reels) y YouTube (Shorts).
 
 ## Contexto del pasaje
 
@@ -184,6 +184,67 @@ No se generará ningún arte hasta aprobar este guion.
 - No hay humor explícito: la ironía queda en la estructura (el juez es el dueño de las pruebas).
 - **Si hay que recortar:** quitar "Se acostó con ella" no se recomienda, porque deja el embarazo sin explicar. Es mejor recortar "Así que tomó una decisión arriesgada:" → "Así que se cubrió el rostro…" (−4 palabras); o el gancho a "Judá la condenó a morir… sin saber lo que ella guardaba" (−2).
 - **Voz:** narrador único en Fish Audio. Las citas de Tamar y Judá pueden ir en la voz del narrador o, como dramatización, con voces de personaje; decidirlo al aprobar el guion. Si hay voces de personaje, aplica la regla de boca animada solo a esas líneas.
+
+## Preparación para plan — HIST-004 (animatic)
+
+**Gate (2026-11-19):** `ready-for-plan` para **animatic**. No habilita el video final ni la publicación.
+
+- **Fuentes aprobadas:**
+  - Enfoque (2026-11-17) y guion v2 `script-approved` (2026-11-17), con las citas de Gn 38:25–26 confirmadas en RVR1960.
+  - Piezas de preproducción, aprobadas por la persona para el animatic el 2026-11-19 a partir del video de revisión. Acepta las observaciones y decisiones de [`04-juda-tamar-preproduccion.md`](04-juda-tamar-preproduccion.md) §3–§4.
+  - Hoja de animación anclada a la voz medida ([`04-juda-tamar-preproduccion.md`](04-juda-tamar-preproduccion.md) §7).
+- **Recursos por estado:**
+  - **`animatic`:**
+    - fondos por capas F1, F2, FM y F3;
+    - MOD (base, M1, M2), J-MC (base, P9, P11), J-CE (base, caminata), T-MC (base, P2), T-REVEAL, T-VEIL, T-SEATED, SELA y CROWD;
+    - LAMP y los objetos O1–O3;
+    - los 10 audios de Fish como **voz de referencia**.
+  - **`final`:** LOGO (símbolo claro de Ismael).
+  - **Disponible:** el sting original de Mixkit; falta su versión de ~1 s.
+  - **`idea`:** música y efectos, sin pista con licencia elegida.
+  - **Composición en Remotion:** burbujas de chat, título, referencias, citas y enseñanza.
+  - **Guía:** COVER (no entra en el animatic).
+- **El guion define lo que el plan necesita:**
+  - acción visual del gancho: la mujer baja el celular entre las burbujas;
+  - puente: match cut de la luz del celular a la lámpara;
+  - imagen de la enseñanza: la mujer levanta la vista con el texto;
+  - entrada al cierre: sting de ~1 s integrado y bucle a M1.
+- **Decisiones fijadas:**
+  - Duración de **43,3 s (1300 cuadros)**, sacada de la voz medida, sin recortes del guion.
+  - Sin CTA.
+  - Textos en pantalla del guion v2. "Sello · cordón · bastón" se resaltan con el color de acento al nombrarse.
+  - Las citas son fragmentos RVR1960 con su referencia y se distinguen de la narración.
+  - Oclusión con el velo hacia el camino.
+  - Elipsis sin mostrar intimidad.
+  - Tamar sacada a contraluz, sin fuego sobre ella ni violencia.
+  - Corte por mirada de P12 a M2.
+  - **Las citas suenan en off, sin boca animada:** Tamar con la voz de Yuli y Judá con la de GABRIEL-VO. En Gn 38:25 Tamar "envió a decir" su frase, y en P12 Judá tiene la mirada baja. Antes del video final se decide si se agregan bocas, porque requieren arte nuevo.
+- **Límites conocidos:**
+  - Las hojas de sprites se ven blandas, porque se amplían de 1,6 a 2,6 veces.
+  - La plaza F1 es azul nocturna; la luz cálida se agrega en Remotion.
+  - F3 no tiene la entrada del pueblo.
+  - Pequeños saltos de redibujo en P10 y P9.
+  - Recortes de borde: en "alto" (P5) el velo y en "extiende" (P9) la punta de los dedos tocan el borde de su celda. Hay que encuadrarlos para que no se vea el corte.
+  - Sin música ni efectos con licencia: el animatic va sin música, con el sting existente y, si hace falta, con efectos marcados como temporales.
+  - Retención: la revelación (P10) entra al 73 % y la frase de remate (Gn 38:26) al 86 % de la duración.
+- **Tareas del plan:**
+  - Crear `src/video/episodes/juda-tamar/story.ts`, que hoy no existe, con los beats y tiempos de los `*.words.json` y la hoja de animación.
+  - Traducir la hoja a planos y cámara.
+  - Montar las capas con `*.layers.json` y los sprites con `*.set.json` (12 fps en doses).
+  - Gradaciones: noche y día en F2, atardecer en F1, luz de antorcha.
+  - Silueta de Tamar en P9 a partir de su base y blur de F3 en P7.
+  - Burbujas, textos y subtítulos del guion aprobado, dentro de las zonas seguras.
+  - Recortar cada audio 6 cuadros después de su última palabra.
+  - Sting de ~1 s derivado del de Mixkit.
+- **Fuera del objetivo (antes del video final):**
+  - Ampliar ×2 las hojas y reprocesarlas.
+  - Plan y permiso comercial de las voces de Fish (Joss, Yuli y GABRIEL-VO).
+  - Música y efectos con licencia.
+  - Bocas animadas, si se deciden.
+  - Portada compuesta en 1080 × 1920 con el símbolo oficial.
+  - Opcional: F3 l0 con el pueblo.
+
+**Siguiente etapa:** plan creado en [`docs/plans/HIST-004-plan.md`](../plans/HIST-004-plan.md) (`plan-draft`, 2026-11-19), con la previa en el storyboard del panel. La ejecución (`ismv-ejecute`) empieza solo con el plan aprobado por la persona.
 
 ## Fuentes consultadas
 

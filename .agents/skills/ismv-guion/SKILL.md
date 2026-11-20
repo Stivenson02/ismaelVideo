@@ -1,6 +1,6 @@
 ---
 name: ismv-guion
-description: Redacta o revisa la narración de un Reel a partir de una historia bíblica aprobada. Estructura el mensaje, controla citas y paráfrasis, y conserva la aprobación humana del texto.
+description: Redacta o revisa la narración de un Reel a partir de una historia aprobada, bíblica o de testimonio (en primera persona y anónima). Estructura el mensaje, controla citas y paráfrasis, y conserva la aprobación humana del texto.
 ---
 
 # ISMV Guion
@@ -26,6 +26,26 @@ Convierte una historia aprobada en un guion corto, claro y narrable para un Reel
 - Marca de forma inequívoca las citas textuales con su traducción. Trata el resto como paráfrasis o dramatización y no uses comillas para embellecerla.
 - La enseñanza debe desprenderse del relato sin presentarse como cita ni prometer resultados que el pasaje no promete.
 - No incluyas CTA hablado: la invitación (seguir a Ismael; Play Store solo cuando la app esté publicada) va en el copy de entrega. Si la persona pide un CTA hablado para un episodio, ponlo como texto pequeño o una línea breve que no rompa el bucle.
+
+## Testimonios
+
+Si el código es un testimonio (nombre "Testimonio —", documento en `docs/testimonios/`), parte del enfoque aprobado en `ismv-testimonio` y aplica estas reglas en lugar de las de cita bíblica:
+
+- **Primera persona** ("Yo…"): es la persona contando su historia, aunque la voz la lea ella o la genere Fish. Habla como habla la gente, no como un sermón.
+- **Solo hechos del texto.** Puedes resumir, ordenar y decirlo con palabras naturales, pero no añadir hechos, diálogos, lugares ni emociones que la persona no contó. Conserva casi literales sus frases más fuertes.
+- **Anonimato.** Sin nombres reales, lugares exactos ni datos que identifiquen, según la tabla de consentimiento. Lo generalizado se anota en las notas editoriales.
+- **Estructura:** la misma de retención:
+  - gancho de 0–3 s con el momento más fuerte de su historia (o un caso cotidiano), más un título en pantalla;
+  - conflicto antes del segundo 5;
+  - giros con "pero / así que / entonces";
+  - encuentro como revelación;
+  - cierre con cómo vive hoy y una frase que se quede.
+
+  Duración guía: **45–60 s (~120–160 palabras)**; hasta 90 s si la historia lo pide y la persona usuaria lo aprueba.
+- **Texto en pantalla obligatorio** al inicio o al final: "Testimonio real". Si aplica, añade "nombre cambiado" y "voz recreada". Un versículo opcional va como referencia del equipo, nunca como palabras de la persona.
+- **Sensibles:** sanidad contada como su experiencia, sin consejo médico; nada gráfico. Las palabras delicadas para las plataformas se parafrasean y se anotan.
+- ✋ Además de la aprobación de la persona usuaria, recomienda que **quien dio el testimonio confirme el guion** ("¿así lo contarías tú?") antes de grabar o generar la voz. Regístralo en el documento.
+- Guarda el guion en `docs/testimonios/<slug>.md`, con el mismo desglose de abajo. Después sigue `$ismv-recursos HIST-###`, que entrega los prompts y el guion de voz por audios.
 
 Entrega junto al texto narrado un desglose compacto para revisión:
 

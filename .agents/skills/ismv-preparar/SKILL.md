@@ -20,6 +20,14 @@ Actúa como gate entre la preparación editorial/visual y la planificación téc
 - Para `video-final`, exige arte final revisado para el gancho, la historia y el remate, cobertura y alfa adecuados, voz Fish Audio final con derechos comerciales comprobados, citas/referencias claras, CTA vigente si el guion lo incluye, marca oficial y revisión de permisos de música/efectos.
 - Comprueba que el guion aprobado defina la acción visual del gancho, su puente al relato, la imagen de enseñanza y la forma de entrar al cierre común; no inventes esas decisiones durante el plan.
 - Comprueba si falta alguna decisión que cambie el alcance, como diseño aprobado, duración, uso o ausencia de CTA y técnica visual.
+- Si es un **testimonio** (`docs/testimonios/`), además verifica:
+  - guion aprobado y, si se pactó, confirmado por quien dio el testimonio;
+  - documento anonimizado según la tabla de consentimiento;
+  - aviso "Testimonio real" (y "nombre cambiado" / "voz recreada" si aplica) previsto en pantalla;
+  - para `video-final`, autorización escrita que cubra voz, nombre o alias, parecido y plataformas usados.
+
+  Sin autorización escrita, el estado máximo es `ready-for-plan` para animatic.
+- Si el episodio usa animación por capas, exige la preproducción (`<slug>-preproduccion.md`): sets y capas procesados con su `*.set.json`/`*.layers.json`, avisos de QA resueltos o aceptados por la persona, piezas aprobadas y una hoja de animación anclada a la voz medida. Un set con avisos de "no es edición fiel" sin resolver es `needs-review`.
 
 ## Resultado
 

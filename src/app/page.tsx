@@ -1,8 +1,14 @@
 import Link from 'next/link';
-import { getStories, getVideos, statusLabel } from '@/lib/stories';
+import { getStories, getVideos, getYoutubeProductions, statusLabel } from '@/lib/stories';
+
+const studyLabel = (status: string) => {
+  const stage = status.split(' — ')[0].trim();
+  return stage === 'idea' ? 'Idea' : stage;
+};
 
 export default async function Home() {
   const stories = await getStories();
+  const youtube = await getYoutubeProductions();
   const videos = Object.fromEntries(await Promise.all(stories.map(async (story) => [story.code, await getVideos(story.code)] as const)));
   const ready = stories.filter((story) => story.status.includes('ready-for-plan') || story.status.includes('plan-draft') || story.status.includes('plan-approved')).length;
   return (
@@ -12,6 +18,7 @@ export default async function Home() {
         <p className="side-label">ESPACIO DE TRABAJO</p>
         <Link className="nav-item nav-active" href="/"><span>◫</span> Historias</Link>
         <a className="nav-item" href="#producciones"><span>▤</span> Producciones</a>
+        <a className="nav-item" href="#youtube"><span>▷</span> YouTube niños</a>
         <Link className="nav-item" href="/guia-artes"><span>◇</span> Guía de artes</Link>
         <div className="sidebar-bottom"><span className="local-dot" /> Archivos locales · sin base de datos</div>
       </aside>
@@ -37,6 +44,19 @@ export default async function Home() {
                 </article>;
               })}
               {stories.length === 0 && <p className="empty-state">No hay historias registradas todavía. Añade una fila a `docs/episodes/INDEX.md`.</p>}
+            </div>
+          </section>
+
+          <section id="youtube" className="production-section youtube-section">
+            <div className="section-heading"><div><span className="section-kicker">LÍNEA EN ESTUDIO · NIÑOS Y FAMILIA</span><h2>YouTube</h2></div><span className="source-note">Estados leídos desde docs/youtube/INDEX.md</span></div>
+            <p className="youtube-intro">Programa largo para niños con un trío fijo de personajes que recorre historias de la Biblia. Investigación, formato, personajes y piloto en docs/youtube/; nada está aprobado todavía.</p>
+            <div className="production-list">
+              {youtube.map((item) => <article className="production-card" key={item.code}>
+                <div className="production-index">{item.code.replace('YT-', '')}</div>
+                <div className="production-main"><div className="production-title-row"><span className="production-code">{item.code}</span><span className="status-pill status-study">{studyLabel(item.status)}</span></div><h3>{item.name}</h3><p>{item.status}</p><div className="production-meta"><span>Formato <b>{item.format}</b></span><span>Duración <b>{item.duration}</b></span></div></div>
+                <div className="production-actions"><span className="quiet-action">{item.document}</span></div>
+              </article>)}
+              {youtube.length === 0 && <p className="empty-state">No hay producciones de YouTube registradas. Añade una fila a `docs/youtube/INDEX.md`.</p>}
             </div>
           </section>
           <section className="workflow-note"><span className="workflow-note-icon">✳</span><div><strong>Revisa antes de producir</strong><p>Cada historia reúne su guion, su storyboard y los videos renderizados en una sola ficha. El storyboard no genera MP4 ni modifica el plan; tus notas quedan guardadas en este navegador.</p></div><span className="workflow-route">PLAN <i>→</i> PREVIA <i>→</i> EJECUCIÓN</span></section>

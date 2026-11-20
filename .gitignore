@@ -39,6 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Preproducción: imágenes crudas del generador, QA y caché de Python
+/art-inbox/*
+!/art-inbox/README.md
+__pycache__/
+*.pyc
+
 # Remotion
 *.mp4
 *.mov

@@ -1,0 +1,57 @@
+{
+  "set": "judah-town-square-night",
+  "source": "art-inbox/hist-004/F1",
+  "generated": "2026-11-19",
+  "size": {
+    "width": 1920,
+    "height": 2400
+  },
+  "layers": [
+    {
+      "file": "judah-town-square-night-l0.png",
+      "key": "opaque",
+      "opaque": true,
+      "coverage": 1.0,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "judah-town-square-night-l1.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.697,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "judah-town-square-night-l2.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.116,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    }
+  ],
+  "stackVsFull": 0.1423
+}

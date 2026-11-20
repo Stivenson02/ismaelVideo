@@ -22,6 +22,12 @@ Evalúa el resultado de una ejecución concreta y entrega hallazgos accionables.
   - que se respeten las zonas seguras.
 
   En episodios anteriores, comprueba que el gancho tenga una acción animada legible, que su puente al relato funcione y que la enseñanza/remate entren con sentido a la placa común.
+- En un **testimonio**, en lugar de fidelidad bíblica revisa:
+  - fidelidad al testimonio escrito: ningún hecho, diálogo ni emoción añadidos;
+  - cumplimiento del consentimiento y del anonimato: alias, personaje genérico o parecido autorizado, ningún dato identificable en voz, pantalla ni arte, terceros no identificables;
+  - aviso "Testimonio real" (y "nombre cambiado" / "voz recreada") legible en pantalla;
+  - sobriedad en los momentos duros, sin afirmaciones médicas añadidas;
+  - que un versículo en pantalla se presente como referencia del equipo, no como palabras de la persona.
 - En planos con variantes de expresión o boca animada, revisa saltos de encuadre/luz, caras dobles durante el fundido, bordes de piezas, legibilidad de la emoción y sincronía de la boca con el diálogo del personaje.
 - Prioriza hallazgos por impacto y enlaza el tiempo/escena o archivo cuando sea posible. Distingue bloqueo de mejora opcional.
 - No cambies el guion, arte o código durante la revisión salvo que la persona pida corregirlo. No corras pruebas no solicitadas.

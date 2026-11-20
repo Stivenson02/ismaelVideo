@@ -25,6 +25,7 @@ Estudio creativo local para producir Reels narrativos de Ismael con ilustración
 - `public/assets/backgrounds/`, `props/`, `audio/`, `brand/`: biblioteca reutilizable.
 - `public/videos/`: MP4 finales renderizados; no se versionan por defecto.
 - `docs/`: visión, flujo, guías de arte, inventario y guiones.
+- `docs/youtube/`: línea en estudio de YouTube para niños y familia (investigación, formato, personajes, piloto y su índice `YT-###`).
 
 ## Uso local
 
@@ -34,7 +35,19 @@ npm run remotion            # previsualizar la composición
 npm run render:ismael-origin # exportar el Reel a public/videos/
 ```
 
-La instalación de dependencias se hace una sola vez con `npm install`. Este proyecto está pensado para trabajar localmente. El repositorio puede sincronizarse con GitHub; los videos exportados, modelos descargados y material bruto se excluyen de Git para no inflar el repositorio.
+La instalación de dependencias se hace una sola vez con `npm install`.
+
+### Preproducción de artes y voz (Python)
+
+Los artes llegan del generador con fondo verde liso y se convierten en piezas animables con `tools/ismv_prep.py`: recorte, registro contra la base, estabilización de sprites, parches de expresión, capas de fondo, video de revisión y tiempos de voz por palabra. Método: `docs/technical/ANIMACION-POR-CAPAS.md`.
+
+```bash
+python -m pip install -r tools/requirements.txt         # una vez
+python tools/ismv_prep.py audit art-inbox/hist-004       # qué llegó y si se puede recortar
+python tools/ismv_prep.py sprites art-inbox/hist-004/MOD/sprite-m1.png public/assets/characters/hook-04/modern-woman-m1 --grid 3x2 --names espera,dolida,baja-1,baja-2,regazo,regazo-blink
+python tools/ismv_prep.py voz public/assets/audio/narration/04-juda-tamar-*.mp3   # un .words.json por audio
+python tools/ismv_prep.py montar art-inbox/hist-005/AUDIO/grabacion.m4a art-inbox/hist-005/AUDIO/cortes.txt public/assets/audio/narration/05-testimonio.mp3 --limpiar   # testimonios
+``` Este proyecto está pensado para trabajar localmente. El repositorio puede sincronizarse con GitHub; los videos exportados, modelos descargados y material bruto se excluyen de Git para no inflar el repositorio.
 
 ## Skills para agentes\n\nSe instalaron en `.agents/skills/` las 13 skills oficiales de Remotion v4.0.542 (creación, composición, marcado, audio, captions, Studio, render, licencia y otras). El archivo `AGENTS.md` indica el contexto del proyecto y cuándo consultarlas.\n\n## Acuerdos de trabajo
 

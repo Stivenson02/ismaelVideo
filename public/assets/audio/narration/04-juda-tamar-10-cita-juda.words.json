@@ -1,0 +1,56 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-10-cita-juda.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 3.396,
+  "fps": 30,
+  "frames": 102,
+  "speechStart": 0.0,
+  "speechEnd": 1.84,
+  "text": "Más justa es ella que yo.",
+  "words": [
+    {
+      "word": "Más",
+      "start": 0.0,
+      "end": 0.42,
+      "from": 0,
+      "to": 13
+    },
+    {
+      "word": "justa",
+      "start": 0.42,
+      "end": 0.9,
+      "from": 13,
+      "to": 27
+    },
+    {
+      "word": "es",
+      "start": 0.9,
+      "end": 1.1,
+      "from": 27,
+      "to": 33
+    },
+    {
+      "word": "ella",
+      "start": 1.1,
+      "end": 1.34,
+      "from": 33,
+      "to": 40
+    },
+    {
+      "word": "que",
+      "start": 1.34,
+      "end": 1.62,
+      "from": 40,
+      "to": 49
+    },
+    {
+      "word": "yo.",
+      "start": 1.62,
+      "end": 1.84,
+      "from": 49,
+      "to": 55
+    }
+  ],
+  "pauses": []
+}

@@ -1,0 +1,35 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-09-remate.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 1.28,
+  "fps": 30,
+  "frames": 39,
+  "speechStart": 0.0,
+  "speechEnd": 1.0,
+  "text": "Judad los reconoció.",
+  "words": [
+    {
+      "word": "Judad",
+      "start": 0.0,
+      "end": 0.36,
+      "from": 0,
+      "to": 11
+    },
+    {
+      "word": "los",
+      "start": 0.36,
+      "end": 0.48,
+      "from": 11,
+      "to": 14
+    },
+    {
+      "word": "reconoció.",
+      "start": 0.48,
+      "end": 1.0,
+      "from": 14,
+      "to": 30
+    }
+  ],
+  "pauses": []
+}

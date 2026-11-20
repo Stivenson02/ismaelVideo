@@ -10,6 +10,7 @@
 - `concepts/episodes/<episodio>/`: imágenes guía de escenas y conceptos de episodio.
 - `social/<episodio>/`: portadas y artes de publicación aprobados, con tipografía/logotipo oficiales compuestos desde recursos existentes.
 - `concepts/biblical-stories/`: ideas visuales de historias todavía no producidas.
+- `concepts/testimonios/estilo/`: referencias de estilo de la línea de testimonios (2D moderno; 4 imágenes recibidas el 2026-11-19). Se adjuntan en los prompts; no son arte para animar.
 - `brand/`: logos e iconos oficiales copiados del proyecto Ismael.
 - `audio/`: narración, música y efectos.
 
@@ -36,15 +37,35 @@ El Reel mantiene una ventana de cámara de 1080 × 1920; el arte de fondo no est
 | Música episodio 01 | `public/assets/audio/music/01-desert-theme.wav` | WAV/MP3 autorizado | Opcional |
 | Sonido de cierre de marca | `public/assets/audio/sfx/mixkit-orchestral-happy-prompt-636.wav` | WAV, original 4,05 s | Original descargado de Mixkit, se conserva intacto ([licencia](https://mixkit.co/license/modal/sfxFree/)) |
 | Sting de cierre (uso) | `public/assets/audio/sfx/ismael-outro-sting.wav` | WAV 44,1 kHz estéreo, 2,90 s | Copia del original con salida suave; usado por `src/video/brand/IsmaelOutro.tsx` |
+| Sting corto integrado (uso) | `public/assets/audio/sfx/ismael-outro-sting-short.wav` | WAV 44,1 kHz estéreo, 1,00 s | Derivado del original de Mixkit (primer segundo, salida suave desde 0,7 s) para el cierre de ~1 s de los Reels en bucle; lo usa `src/video/brand/IsmaelSting.tsx` (HIST-004). Misma licencia que el original |
 | Efectos de ambiente episodio 01 | `public/assets/audio/sfx/` | WAV/MP3 autorizado | Opcionales |
 | HIST-002, personajes y apoyos | `public/assets/characters/{abraham,sarah,abimelech,hook-02,gerar-support}/` | PNG RGBA | Recibidos desde Descargas; piezas con alfa real, en revisión. La mujer del gancho ya coincide con el frame; el recorte anterior de hombre se conserva como `person-old-man-unused.png`. Abraham y Abimelec tienen variantes de cuerpo entero; registro para transición pendiente de revisión. |
 | HIST-002, pose reflexiva para el cierre | `public/assets/characters/hook-02/person-affected-reflective.png` | PNG | Arte “Thoughtful woman in warm cut-paper” recibido desde Descargas; nueva pose de medio cuerpo de la misma mujer, usada espejada en storyboard para mirar hacia el sobre. |
 | HIST-002, prop y fondo del gancho | `public/assets/props/hook-02/`, `public/assets/backgrounds/hook-02/` | PNG RGBA / PNG | Mano-sobre aislado con alfa; fondo mesa 941 × 1672 opaco, candidato a animatic estático. |
 | HIST-002, estudios de escenarios | `public/assets/concepts/episodes/abraham-sara-abimelech/background-studies/` | PNG | Cuatro panoramas 2172 × 724 y tres guías verticales de 941 × 1672 o 1024 × 1536. Son referencias/placas estáticas; cobertura insuficiente para cámara multiplano final. |
 | HIST-002, frames guía | `public/assets/concepts/episodes/abraham-sara-abimelech/frames/` | PNG | Composiciones estáticas de 941 × 1672 para revisar, no son capas. Incluye el frame de Abimelec dormido `frame-abimelech-sleeping-amber-shadows.png` para animatic (push-in sobre placa opaca); el frame con sobre en escena bíblica está marcado `do-not-use`; también hay frame de susurro y cierre de Abimelec. |
+| HIST-004, piezas procesadas | `backgrounds/{judah-town-square-night,tamar-father-house,hist-004-modern-bedroom,enaim-road}/`, `characters/{judah,tamar,hook-04,shelah,hist-004-crowd}/`, `props/hist-004/` | PNG RGBA + `*.set.json` / `*.layers.json` | Recibidas el 2026-11-19 y procesadas con `tools/ismv_prep.py`; en `review`. Las hojas de sprites miden 418 × 627 o 512 × 768 por cuadro: sirven para el animatic y necesitan ampliarse ×2 para el video final. Registro en `docs/episodes/04-juda-tamar-preproduccion.md` |
+| HIST-004, narración | `audio/narration/04-juda-tamar-01-gancho.mp3` … `-10-cita-juda.mp3` + `.words.json` | MP3 de Fish | Recibida el 2026-11-19 (Joss; citas con Yuli y GABRIEL-VO) y medida. Referencia para el animatic: falta confirmar el plan y el permiso comercial |
+| HIST-004, portada (guía) | `concepts/episodes/juda-tamar/instagram-cover-guide.png` | PNG 941 × 1672 | Guía recibida y aprobada |
+| HIST-004, portada de Reels y Shorts | `social/hist-004/instagram-reel-cover.png` | PNG 1080 × 1920 | Propuesta compuesta el 2026-11-20 (guía + "GÉNESIS 38" + título + símbolo oficial, `Still` `JudaTamarCover`); pendiente de aprobación |
 | HIST-002, portada de Instagram | `public/assets/concepts/episodes/abraham-sara-abimelech/instagram-cover-guide.png` → `public/assets/social/hist-002/instagram-reel-cover.png` | PNG | Guía recibida de 941 × 1672; falta aprobación y composición final de tipografía/símbolo oficial a 1080 × 1920. |
 
 Las referencias visuales de otras historias que llegaron junto con los artes de Agar están organizadas en `public/assets/concepts/biblical-stories/` para retomarlas cuando se elija cada episodio.
+
+## Bandeja de entrada y sets procesados (desde 2026-11-19)
+
+Las imágenes crudas del generador se dejan en `art-inbox/<hist>/<ID>/` (no se versiona; ver `art-inbox/README.md`). La preproducción (`tools/ismv_prep.py`, método en [`technical/ANIMACION-POR-CAPAS.md`](technical/ANIMACION-POR-CAPAS.md)) escribe aquí las piezas listas:
+
+| Tipo | Carpeta de salida | Archivos |
+|---|---|---|
+| Hoja de sprites | `characters/<personaje>/<set>/` | `<set>-<cuadro>.png` por cada cuadro (nombres de la tabla de entrega, p. ej. `modern-woman-m1-espera.png`) y `<set>.set.json` (lienzo, ancla, cuadros, registro y avisos) |
+| Base de diseño | `characters/<personaje>/` | `<personaje>-…-base.png` (referencia; no se anima) |
+| Set por ediciones | `characters/<personaje>/<set>/` | `<set>-base.png`, `<set>-pose-NN.png`, `<set>-face-<nombre>.png`, `<set>-face-<nombre>-on-pose-NN.png`, `<set>-blink.png`, `<set>.set.json` |
+| Fondo por capas | `backgrounds/<escenario>/` | `<escenario>-l0.png` (lejana, opaca), `-l1.png`, `-l2.png`…, `<escenario>-full-reference.png`, `<escenario>.layers.json` |
+| Prop | `props/<hist>/` | un PNG RGBA por objeto |
+| Voz | `audio/narration/` | un audio de Fish por frase del guion de voz (`<NN-episodio>-NN-<tramo>.mp3`) y su `<archivo>.words.json` con los tiempos |
+
+Todas las piezas de un set comparten el lienzo, así que se superponen sin reescalar. Los parches son lienzos completos transparentes salvo el rostro. Las hojas de QA y los videos de revisión quedan en `art-inbox/<hist>/<ID>/_qa/`.
 
 ## Sets para animación limitada
 

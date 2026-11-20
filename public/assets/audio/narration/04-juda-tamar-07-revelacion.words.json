@@ -1,0 +1,49 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-07-revelacion.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 2.116,
+  "fps": 30,
+  "frames": 64,
+  "speechStart": 0.0,
+  "speechEnd": 1.62,
+  "text": "Entonces, ella mostró los objetos.",
+  "words": [
+    {
+      "word": "Entonces,",
+      "start": 0.0,
+      "end": 0.5,
+      "from": 0,
+      "to": 15
+    },
+    {
+      "word": "ella",
+      "start": 0.72,
+      "end": 0.86,
+      "from": 22,
+      "to": 26
+    },
+    {
+      "word": "mostró",
+      "start": 0.86,
+      "end": 1.22,
+      "from": 26,
+      "to": 37
+    },
+    {
+      "word": "los",
+      "start": 1.22,
+      "end": 1.34,
+      "from": 37,
+      "to": 40
+    },
+    {
+      "word": "objetos.",
+      "start": 1.34,
+      "end": 1.62,
+      "from": 40,
+      "to": 49
+    }
+  ],
+  "pauses": []
+}

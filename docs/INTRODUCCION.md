@@ -3,6 +3,10 @@
 ## Qué es Ismael Studio
 Un pequeño taller audiovisual local para contar pasajes e historias bíblicas en videos breves de Instagram. Ismael es la marca de la app; los videos cierran con su logo oficial. El tono busca ser cálido, claro y respetuoso con el texto bíblico.
 
+Desde 2026-11-19 hay una segunda línea: **testimonios animados**. Son historias reales que las personas escriben, convertidas en un guion en primera persona (casi siempre anónimo) y animadas en estilo 2D moderno con la misma técnica. Guía, autorización y flujo en [`testimonios/README.md`](testimonios/README.md).
+
+Desde 2026-11-19 está **en estudio** una tercera línea: **YouTube para niños y familia**. Es un programa largo (8–12 min, 16:9) para niños de 6 a 10 años, con un trío fijo de personajes que recorre historias bíblicas a partir de problemas de la vida real. Todavía no entra al flujo de producción. Investigación, propuestas y decisiones pendientes en [`youtube/README.md`](youtube/README.md).
+
 ## Método visual
 Usamos animación 2D minimalista de recortes, con una atmósfera cinematográfica, misteriosa y emocional. Apilamos fondos, personajes y elementos de primer plano; los paneos, acercamientos y desplazamientos entre capas dan movimiento sin dibujar cada cuadro. El formato vertical define la ventana de cámara, no el tamaño del fondo: los escenarios pueden ser panorámicos y recorrerlos es parte clave de la animación. Los detalles se mantienen simples y legibles en formato vertical.
 

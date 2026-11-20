@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Preproduccion"
+  short_description: "Procesa artes y voz y arma la hoja de animacion"
+  default_prompt: "Usa $ismv-preproduccion para procesar los artes de art-inbox y la voz de esta historia."

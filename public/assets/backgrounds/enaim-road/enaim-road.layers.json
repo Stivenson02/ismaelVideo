@@ -1,0 +1,56 @@
+{
+  "set": "enaim-road",
+  "source": "art-inbox/hist-004/F3",
+  "generated": "2026-11-19",
+  "size": {
+    "width": 2100,
+    "height": 2100
+  },
+  "layers": [
+    {
+      "file": "enaim-road-l0.png",
+      "key": "opaque",
+      "opaque": true,
+      "coverage": 1.0,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "enaim-road-l1.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.655,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "enaim-road-l2.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.193,
+      "align": {
+        "dx": -1.8,
+        "dy": -0.92,
+        "scale": 1.0002,
+        "rotDeg": -0.008,
+        "cc": 0.9837
+      },
+      "depth": null
+    }
+  ],
+  "stackVsFull": 0.053
+}

@@ -26,15 +26,17 @@ Ayudar a producir Reels bíblicos narrativos para la marca Ismael, de forma loca
 - Sigue `docs/DIRECCION-VISUAL.md` al crear o revisar historias con decisiones visuales, prompts, artes, escenas o animación. Las skills propias del proyecto también deben enlazar esta guía cuando su flujo afecte lo visual; no modifiques las skills oficiales de Remotion para meter criterios de marca.
 - `src/video/episodes/*/story.ts` define los beats y tiempos del relato; no mezcles ahí detalles visuales de implementación.
 - Usa recursos de `public/assets/` mediante rutas estables y el catálogo de `docs/ASSET-CATALOG.md`.
+- Los personajes animados siguen la animación por capas desde una base (`docs/technical/ANIMACION-POR-CAPAS.md`): la persona genera base y ediciones con fondo verde; `ismv-preproduccion` las procesa con `tools/ismv_prep.py` (Python local) antes del plan.
 - Los fondos pueden superar las dimensiones verticales del Reel; diseña su tamaño según el recorrido de cámara y las capas/parallax previstos.
 - Si un arte todavía no existe, conserva un placeholder bien visible; no sustituyas personajes o el logo con imágenes inventadas.
 - Mantén el cierre de marca en todos los Reels y reserva su duración en la composición.
 - Distingue las citas bíblicas del texto narrado y de la dramatización. No presentes paráfrasis como cita textual.
-- Genera la narración de los episodios con [Fish Audio, texto a voz](https://fish.audio/es/app/text-to-speech/), herramienta fija elegida por la persona. Guarda el audio descargado localmente y registra voz, fecha, plan y derechos; una referencia de montaje no se declara publicable sin permiso comercial claro.
+- **Testimonios** (`docs/testimonios/`, skills `ismv-testimonio` → `ismv-guion`): llegan escritos y son anónimos por defecto. En `docs/` todo va anonimizado; el texto original queda en `art-inbox/`, fuera de git. El guion va en primera persona y no añade hechos. La voz la lee la persona o se genera en Fish como "voz recreada", y el video dice "Testimonio real" (y "nombre cambiado" / "voz recreada" si aplica). Publicar requiere la autorización escrita.
+- Genera la narración de los episodios bíblicos con [Fish Audio, texto a voz](https://fish.audio/es/app/text-to-speech/), herramienta fija elegida por la persona. Guarda el audio descargado localmente y registra voz, fecha, plan y derechos; una referencia de montaje no se declara publicable sin permiso comercial claro.
 - Los artes y el contenido narrativo pasan por revisión del usuario antes de dar un episodio por finalizado.
 
 ## Formato del Reel
-Predeterminado: 1080 × 1920, 30 fps, MP4 H.264. Una duración entre 30 y 45 segundos es una guía inicial, no una regla rígida.
+Predeterminado: 1080 × 1920, 30 fps, MP4 H.264. Una duración entre 30 y 45 segundos es una guía inicial, no una regla rígida. Cada video se publica en **Instagram (Reels)** y **YouTube (Shorts)** con el mismo MP4 de publicación (sin etiqueta de revisión); `ismv-cerrar` prepara el copy de las dos redes.
 
 ## Verificación
 No agregues ni ejecutes pruebas salvo que el usuario pida probar/verificar. Si se pide, prefiere lint/build y un render de muestra local; registra errores y limitaciones sin modificar contenido fuera del alcance.

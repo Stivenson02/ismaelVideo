@@ -1,0 +1,108 @@
+{
+  "set": "judah-reaction",
+  "source": "art-inbox/hist-004/JUDA/sprite-p11.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 512,
+    "height": 768
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 254,
+    "y": 754,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    9,
+    20,
+    500,
+    754
+  ],
+  "base": {
+    "name": "seguro",
+    "file": "judah-reaction-seguro.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "seguro-blink",
+      "file": "judah-reaction-seguro-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "seguro",
+      "changedVsPrev": 0.008,
+      "changedVsBase": 0.0079,
+      "bbox": [
+        159,
+        114,
+        259,
+        163
+      ],
+      "align": {
+        "dx": 0.17,
+        "dy": 0.19,
+        "scale": 0.9987,
+        "rotDeg": -0.01,
+        "cc": 0.9989
+      },
+      "warnings": []
+    },
+    {
+      "name": "sorpresa",
+      "file": "judah-reaction-sorpresa.png",
+      "key": "key-chroma",
+      "pinnedTo": "seguro-blink",
+      "changedVsPrev": 0.1016,
+      "changedVsBase": 0.0986,
+      "bbox": [
+        140,
+        8,
+        385,
+        274
+      ],
+      "align": {
+        "dx": 0.23,
+        "dy": -0.38,
+        "scale": 1.0002,
+        "rotDeg": -0.006,
+        "cc": 0.9988
+      },
+      "warnings": []
+    },
+    {
+      "name": "reconoce",
+      "file": "judah-reaction-reconoce.png",
+      "key": "key-chroma",
+      "pinnedTo": "sorpresa",
+      "changedVsPrev": 0.1376,
+      "changedVsBase": 0.1359,
+      "bbox": [
+        126,
+        9,
+        381,
+        302
+      ],
+      "align": {
+        "dx": 0.4,
+        "dy": -0.64,
+        "scale": 0.9997,
+        "rotDeg": -0.013,
+        "cc": 0.9987
+      },
+      "warnings": []
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 512x768: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-p11.png",
+    "grid": "2x2",
+    "frames": [
+      "seguro",
+      "seguro-blink",
+      "sorpresa",
+      "reconoce"
+    ]
+  }
+}

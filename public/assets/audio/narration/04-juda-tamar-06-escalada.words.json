@@ -1,0 +1,105 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-06-escalada.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 5.773,
+  "fps": 30,
+  "frames": 174,
+  "speechStart": 0.0,
+  "speechEnd": 5.5,
+  "text": "Meses después estaba embarazada y Judá, el que no cumplió, ordenó castigarla.",
+  "words": [
+    {
+      "word": "Meses",
+      "start": 0.0,
+      "end": 0.42,
+      "from": 0,
+      "to": 13
+    },
+    {
+      "word": "después",
+      "start": 0.42,
+      "end": 0.74,
+      "from": 13,
+      "to": 22
+    },
+    {
+      "word": "estaba",
+      "start": 0.74,
+      "end": 1.38,
+      "from": 22,
+      "to": 41
+    },
+    {
+      "word": "embarazada",
+      "start": 1.38,
+      "end": 2.04,
+      "from": 41,
+      "to": 61
+    },
+    {
+      "word": "y",
+      "start": 2.04,
+      "end": 2.58,
+      "from": 61,
+      "to": 77
+    },
+    {
+      "word": "Judá,",
+      "start": 2.58,
+      "end": 3.02,
+      "from": 77,
+      "to": 91
+    },
+    {
+      "word": "el",
+      "start": 3.1,
+      "end": 3.34,
+      "from": 93,
+      "to": 100
+    },
+    {
+      "word": "que",
+      "start": 3.34,
+      "end": 3.46,
+      "from": 100,
+      "to": 104
+    },
+    {
+      "word": "no",
+      "start": 3.46,
+      "end": 3.6,
+      "from": 104,
+      "to": 108
+    },
+    {
+      "word": "cumplió,",
+      "start": 3.6,
+      "end": 4.12,
+      "from": 108,
+      "to": 124
+    },
+    {
+      "word": "ordenó",
+      "start": 4.56,
+      "end": 4.9,
+      "from": 137,
+      "to": 147
+    },
+    {
+      "word": "castigarla.",
+      "start": 4.9,
+      "end": 5.5,
+      "from": 147,
+      "to": 165
+    }
+  ],
+  "pauses": [
+    {
+      "after": "cumplió,",
+      "start": 4.12,
+      "end": 4.56,
+      "dur": 0.44
+    }
+  ]
+}

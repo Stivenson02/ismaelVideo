@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Storyboard from './storyboard';
+import { storyboardCodes } from './storyboards';
 import { extractScript, getStory, getVideos, readRepoFile, statusLabel } from '@/lib/stories';
 
 const views = [
@@ -10,7 +11,7 @@ const views = [
 ] as const;
 type View = (typeof views)[number]['id'];
 
-const storyboards = new Set(['HIST-002']);
+const storyboards = new Set(storyboardCodes);
 
 export default async function StoryPage({ params, searchParams }: PageProps<'/historias/[code]'>) {
   const { code } = await params;
@@ -79,7 +80,7 @@ export default async function StoryPage({ params, searchParams }: PageProps<'/hi
         )}
 
         {view === 'storyboard' && storyboards.has(code) && (
-          <div className="embedded-board"><Storyboard /></div>
+          <div className="embedded-board"><Storyboard code={code} /></div>
         )}
 
         {view === 'video' && (

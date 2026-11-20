@@ -1,0 +1,168 @@
+{
+  "set": "tamar-veil",
+  "source": "art-inbox/hist-004/TAMAR/sprite-p5.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 418,
+    "height": 627
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 204,
+    "y": 615,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    19,
+    28,
+    389,
+    615
+  ],
+  "base": {
+    "name": "doblado",
+    "file": "tamar-veil-doblado.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "despliega",
+      "file": "tamar-veil-despliega.png",
+      "key": "key-chroma",
+      "pinnedTo": "doblado",
+      "changedVsPrev": 0.4996,
+      "changedVsBase": 0.4989,
+      "bbox": [
+        1,
+        241,
+        418,
+        626
+      ],
+      "align": {
+        "dx": 0.03,
+        "dy": -0.02,
+        "scale": 1.0004,
+        "rotDeg": 0.033,
+        "cc": 0.9972
+      },
+      "warnings": [
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "alto",
+      "file": "tamar-veil-alto.png",
+      "key": "key-chroma",
+      "pinnedTo": "despliega",
+      "changedVsPrev": 0.9147,
+      "changedVsBase": 0.8838,
+      "bbox": [
+        0,
+        7,
+        418,
+        626
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "cae",
+      "file": "tamar-veil-cae.png",
+      "key": "key-chroma",
+      "pinnedTo": "alto",
+      "changedVsPrev": 0.8205,
+      "changedVsBase": 0.6591,
+      "bbox": [
+        1,
+        16,
+        413,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "cierra",
+      "file": "tamar-veil-cierra.png",
+      "key": "key-chroma",
+      "pinnedTo": "cae",
+      "changedVsPrev": 0.5968,
+      "changedVsBase": 0.6832,
+      "bbox": [
+        0,
+        16,
+        411,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "velada",
+      "file": "tamar-veil-velada.png",
+      "key": "key-chroma",
+      "pinnedTo": "cierra",
+      "changedVsPrev": 0.7013,
+      "changedVsBase": 0.6665,
+      "bbox": [
+        5,
+        16,
+        413,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 418x627: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-p5.png",
+    "grid": "3x2",
+    "frames": [
+      "doblado",
+      "despliega",
+      "alto",
+      "cae",
+      "cierra",
+      "velada"
+    ]
+  }
+}

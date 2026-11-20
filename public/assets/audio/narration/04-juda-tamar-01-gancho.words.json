@@ -1,0 +1,125 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-01-gancho.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 6.191,
+  "fps": 30,
+  "frames": 186,
+  "speechStart": 0.0,
+  "speechEnd": 6.02,
+  "text": "Te prometió algo, esperaste meses, nunca cumplió y al final la culpa fue tuya.",
+  "words": [
+    {
+      "word": "Te",
+      "start": 0.0,
+      "end": 0.14,
+      "from": 0,
+      "to": 4
+    },
+    {
+      "word": "prometió",
+      "start": 0.14,
+      "end": 0.58,
+      "from": 4,
+      "to": 17
+    },
+    {
+      "word": "algo,",
+      "start": 0.58,
+      "end": 0.82,
+      "from": 17,
+      "to": 25
+    },
+    {
+      "word": "esperaste",
+      "start": 1.32,
+      "end": 1.8,
+      "from": 40,
+      "to": 54
+    },
+    {
+      "word": "meses,",
+      "start": 1.8,
+      "end": 2.16,
+      "from": 54,
+      "to": 65
+    },
+    {
+      "word": "nunca",
+      "start": 2.72,
+      "end": 2.92,
+      "from": 82,
+      "to": 88
+    },
+    {
+      "word": "cumplió",
+      "start": 2.92,
+      "end": 3.56,
+      "from": 88,
+      "to": 107
+    },
+    {
+      "word": "y",
+      "start": 3.56,
+      "end": 4.1,
+      "from": 107,
+      "to": 123
+    },
+    {
+      "word": "al",
+      "start": 4.1,
+      "end": 4.2,
+      "from": 123,
+      "to": 126
+    },
+    {
+      "word": "final",
+      "start": 4.2,
+      "end": 4.52,
+      "from": 126,
+      "to": 136
+    },
+    {
+      "word": "la",
+      "start": 4.52,
+      "end": 5.12,
+      "from": 136,
+      "to": 154
+    },
+    {
+      "word": "culpa",
+      "start": 5.12,
+      "end": 5.34,
+      "from": 154,
+      "to": 160
+    },
+    {
+      "word": "fue",
+      "start": 5.34,
+      "end": 5.62,
+      "from": 160,
+      "to": 169
+    },
+    {
+      "word": "tuya.",
+      "start": 5.62,
+      "end": 6.02,
+      "from": 169,
+      "to": 181
+    }
+  ],
+  "pauses": [
+    {
+      "after": "algo,",
+      "start": 0.82,
+      "end": 1.32,
+      "dur": 0.5
+    },
+    {
+      "after": "meses,",
+      "start": 2.16,
+      "end": 2.72,
+      "dur": 0.56
+    }
+  ]
+}

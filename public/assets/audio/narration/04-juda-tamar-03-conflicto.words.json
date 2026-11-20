@@ -1,0 +1,138 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-03-conflicto.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 5.773,
+  "fps": 30,
+  "frames": 174,
+  "speechStart": 0.0,
+  "speechEnd": 5.54,
+  "text": "Había quedado viuda, Judá, su suegro, le prometió a su hijo Selá, pero nunca cumplió.",
+  "words": [
+    {
+      "word": "Había",
+      "start": 0.0,
+      "end": 0.32,
+      "from": 0,
+      "to": 10
+    },
+    {
+      "word": "quedado",
+      "start": 0.32,
+      "end": 0.64,
+      "from": 10,
+      "to": 19
+    },
+    {
+      "word": "viuda,",
+      "start": 0.64,
+      "end": 0.98,
+      "from": 19,
+      "to": 29
+    },
+    {
+      "word": "Judá,",
+      "start": 1.34,
+      "end": 1.76,
+      "from": 40,
+      "to": 53
+    },
+    {
+      "word": "su",
+      "start": 1.88,
+      "end": 2.02,
+      "from": 56,
+      "to": 61
+    },
+    {
+      "word": "suegro,",
+      "start": 2.02,
+      "end": 2.44,
+      "from": 61,
+      "to": 73
+    },
+    {
+      "word": "le",
+      "start": 2.76,
+      "end": 2.86,
+      "from": 83,
+      "to": 86
+    },
+    {
+      "word": "prometió",
+      "start": 2.86,
+      "end": 3.3,
+      "from": 86,
+      "to": 99
+    },
+    {
+      "word": "a",
+      "start": 3.3,
+      "end": 3.38,
+      "from": 99,
+      "to": 101
+    },
+    {
+      "word": "su",
+      "start": 3.38,
+      "end": 3.52,
+      "from": 101,
+      "to": 106
+    },
+    {
+      "word": "hijo",
+      "start": 3.52,
+      "end": 3.72,
+      "from": 106,
+      "to": 112
+    },
+    {
+      "word": "Selá,",
+      "start": 3.72,
+      "end": 4.18,
+      "from": 112,
+      "to": 125
+    },
+    {
+      "word": "pero",
+      "start": 4.54,
+      "end": 4.74,
+      "from": 136,
+      "to": 142
+    },
+    {
+      "word": "nunca",
+      "start": 4.74,
+      "end": 5.0,
+      "from": 142,
+      "to": 150
+    },
+    {
+      "word": "cumplió.",
+      "start": 5.0,
+      "end": 5.54,
+      "from": 150,
+      "to": 166
+    }
+  ],
+  "pauses": [
+    {
+      "after": "viuda,",
+      "start": 0.98,
+      "end": 1.34,
+      "dur": 0.36
+    },
+    {
+      "after": "suegro,",
+      "start": 2.44,
+      "end": 2.76,
+      "dur": 0.32
+    },
+    {
+      "after": "Selá,",
+      "start": 4.18,
+      "end": 4.54,
+      "dur": 0.36
+    }
+  ]
+}

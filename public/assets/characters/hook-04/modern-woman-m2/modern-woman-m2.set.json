@@ -1,0 +1,108 @@
+{
+  "set": "modern-woman-m2",
+  "source": "art-inbox/hist-004/MOD/sprite-m2.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 512,
+    "height": 768
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 258,
+    "y": 754,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    13,
+    18,
+    503,
+    754
+  ],
+  "base": {
+    "name": "regazo",
+    "file": "modern-woman-m2-regazo.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "sube",
+      "file": "modern-woman-m2-sube.png",
+      "key": "key-chroma",
+      "pinnedTo": "regazo",
+      "changedVsPrev": 0.1043,
+      "changedVsBase": 0.0984,
+      "bbox": [
+        132,
+        27,
+        413,
+        322
+      ],
+      "align": {
+        "dx": -0.76,
+        "dy": -0.37,
+        "scale": 1.0004,
+        "rotDeg": 0.004,
+        "cc": 0.9964
+      },
+      "warnings": []
+    },
+    {
+      "name": "firme",
+      "file": "modern-woman-m2-firme.png",
+      "key": "key-chroma",
+      "pinnedTo": "sube",
+      "changedVsPrev": 0.1345,
+      "changedVsBase": 0.1402,
+      "bbox": [
+        93,
+        13,
+        419,
+        323
+      ],
+      "align": {
+        "dx": 0.37,
+        "dy": -0.29,
+        "scale": 0.9992,
+        "rotDeg": 0.012,
+        "cc": 0.9956
+      },
+      "warnings": []
+    },
+    {
+      "name": "firme-blink",
+      "file": "modern-woman-m2-firme-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "firme",
+      "changedVsPrev": 0.0122,
+      "changedVsBase": 0.1403,
+      "bbox": [
+        93,
+        13,
+        419,
+        323
+      ],
+      "align": {
+        "dx": -0.62,
+        "dy": -0.06,
+        "scale": 0.9997,
+        "rotDeg": 0.002,
+        "cc": 0.9954
+      },
+      "warnings": []
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 512x768: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-m2.png",
+    "grid": "2x2",
+    "frames": [
+      "regazo",
+      "sube",
+      "firme",
+      "firme-blink"
+    ]
+  }
+}

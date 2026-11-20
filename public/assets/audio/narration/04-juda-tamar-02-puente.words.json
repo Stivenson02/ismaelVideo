@@ -1,0 +1,84 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-02-puente.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 3.03,
+  "fps": 30,
+  "frames": 91,
+  "speechStart": 0.0,
+  "speechEnd": 2.76,
+  "text": "Atamar le pasó algo parecido, pero mucho más grave.",
+  "words": [
+    {
+      "word": "Atamar",
+      "start": 0.0,
+      "end": 0.42,
+      "from": 0,
+      "to": 13
+    },
+    {
+      "word": "le",
+      "start": 0.42,
+      "end": 0.56,
+      "from": 13,
+      "to": 17
+    },
+    {
+      "word": "pasó",
+      "start": 0.56,
+      "end": 0.74,
+      "from": 17,
+      "to": 22
+    },
+    {
+      "word": "algo",
+      "start": 0.74,
+      "end": 0.96,
+      "from": 22,
+      "to": 29
+    },
+    {
+      "word": "parecido,",
+      "start": 0.96,
+      "end": 1.48,
+      "from": 29,
+      "to": 44
+    },
+    {
+      "word": "pero",
+      "start": 1.86,
+      "end": 2.04,
+      "from": 56,
+      "to": 61
+    },
+    {
+      "word": "mucho",
+      "start": 2.04,
+      "end": 2.32,
+      "from": 61,
+      "to": 70
+    },
+    {
+      "word": "más",
+      "start": 2.32,
+      "end": 2.5,
+      "from": 70,
+      "to": 75
+    },
+    {
+      "word": "grave.",
+      "start": 2.5,
+      "end": 2.76,
+      "from": 75,
+      "to": 83
+    }
+  ],
+  "pauses": [
+    {
+      "after": "parecido,",
+      "start": 1.48,
+      "end": 1.86,
+      "dur": 0.38
+    }
+  ]
+}

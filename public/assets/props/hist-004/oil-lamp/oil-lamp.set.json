@@ -1,0 +1,51 @@
+{
+  "set": "oil-lamp",
+  "source": "art-inbox/hist-004/LAMP",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 612,
+    "y": 879,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    192,
+    496,
+    1031,
+    879
+  ],
+  "base": {
+    "name": "base",
+    "file": "oil-lamp-base.png",
+    "key": "key-chroma"
+  },
+  "poses": [],
+  "patches": [
+    {
+      "name": "flame",
+      "on": "base",
+      "file": "oil-lamp-flame.png",
+      "key": "key-chroma",
+      "changed": 0.0353,
+      "bbox": [
+        802,
+        323,
+        1061,
+        596
+      ],
+      "align": {
+        "dx": -0.32,
+        "dy": -1.01,
+        "scale": 1.0007,
+        "rotDeg": -0.01,
+        "cc": 0.9978
+      },
+      "warnings": []
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,164 @@
+{
+  "set": "modern-woman-m1",
+  "source": "art-inbox/hist-004/MOD/sprite-m1.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 418,
+    "height": 627
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 209,
+    "y": 623,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    7,
+    18,
+    411,
+    623
+  ],
+  "base": {
+    "name": "espera",
+    "file": "modern-woman-m1-espera.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "dolida",
+      "file": "modern-woman-m1-dolida.png",
+      "key": "key-chroma",
+      "pinnedTo": "espera",
+      "changedVsPrev": 0.0441,
+      "changedVsBase": 0.0429,
+      "bbox": [
+        148,
+        136,
+        286,
+        286
+      ],
+      "align": {
+        "dx": 0.21,
+        "dy": 0.18,
+        "scale": 0.9994,
+        "rotDeg": -0.004,
+        "cc": 0.9975
+      },
+      "warnings": []
+    },
+    {
+      "name": "baja-1",
+      "file": "modern-woman-m1-baja-1.png",
+      "key": "key-chroma",
+      "pinnedTo": "dolida",
+      "changedVsPrev": 0.6667,
+      "changedVsBase": 0.6622,
+      "bbox": [
+        0,
+        5,
+        418,
+        627
+      ],
+      "align": {
+        "dx": 2.27,
+        "dy": 0.94,
+        "scale": 0.9977,
+        "rotDeg": 0.301,
+        "cc": 0.835
+      },
+      "warnings": [
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "baja-2",
+      "file": "modern-woman-m1-baja-2.png",
+      "key": "key-chroma",
+      "pinnedTo": "baja-1",
+      "changedVsPrev": 0.6964,
+      "changedVsBase": 0.6846,
+      "bbox": [
+        0,
+        11,
+        418,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "regazo",
+      "file": "modern-woman-m1-regazo.png",
+      "key": "key-chroma",
+      "pinnedTo": "baja-2",
+      "changedVsPrev": 0.3455,
+      "changedVsBase": 0.6848,
+      "bbox": [
+        0,
+        11,
+        418,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "regazo-blink",
+      "file": "modern-woman-m1-regazo-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "regazo",
+      "changedVsPrev": 0.0118,
+      "changedVsBase": 0.6848,
+      "bbox": [
+        0,
+        11,
+        418,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear"
+      ]
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 418x627: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-m1.png",
+    "grid": "3x2",
+    "frames": [
+      "espera",
+      "dolida",
+      "baja-1",
+      "baja-2",
+      "regazo",
+      "regazo-blink"
+    ]
+  }
+}

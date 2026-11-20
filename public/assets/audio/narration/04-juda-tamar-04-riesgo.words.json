@@ -1,0 +1,126 @@
+{
+  "audio": "public/assets/audio/narration/04-juda-tamar-04-riesgo.mp3",
+  "model": "small",
+  "language": "es",
+  "duration": 4.154,
+  "fps": 30,
+  "frames": 125,
+  "speechStart": 0.0,
+  "speechEnd": 3.74,
+  "text": "Así que tomó un riesgo, se cubrió el rostro y lo esperó en el camino.",
+  "words": [
+    {
+      "word": "Así",
+      "start": 0.0,
+      "end": 0.26,
+      "from": 0,
+      "to": 8
+    },
+    {
+      "word": "que",
+      "start": 0.26,
+      "end": 0.42,
+      "from": 8,
+      "to": 13
+    },
+    {
+      "word": "tomó",
+      "start": 0.42,
+      "end": 0.7,
+      "from": 13,
+      "to": 21
+    },
+    {
+      "word": "un",
+      "start": 0.7,
+      "end": 0.8,
+      "from": 21,
+      "to": 24
+    },
+    {
+      "word": "riesgo,",
+      "start": 0.8,
+      "end": 1.22,
+      "from": 24,
+      "to": 37
+    },
+    {
+      "word": "se",
+      "start": 1.6,
+      "end": 1.7,
+      "from": 48,
+      "to": 51
+    },
+    {
+      "word": "cubrió",
+      "start": 1.7,
+      "end": 2.08,
+      "from": 51,
+      "to": 62
+    },
+    {
+      "word": "el",
+      "start": 2.08,
+      "end": 2.18,
+      "from": 62,
+      "to": 65
+    },
+    {
+      "word": "rostro",
+      "start": 2.18,
+      "end": 2.68,
+      "from": 65,
+      "to": 80
+    },
+    {
+      "word": "y",
+      "start": 2.68,
+      "end": 2.88,
+      "from": 80,
+      "to": 86
+    },
+    {
+      "word": "lo",
+      "start": 2.88,
+      "end": 2.98,
+      "from": 86,
+      "to": 89
+    },
+    {
+      "word": "esperó",
+      "start": 2.98,
+      "end": 3.34,
+      "from": 89,
+      "to": 100
+    },
+    {
+      "word": "en",
+      "start": 3.34,
+      "end": 3.44,
+      "from": 100,
+      "to": 103
+    },
+    {
+      "word": "el",
+      "start": 3.44,
+      "end": 3.54,
+      "from": 103,
+      "to": 106
+    },
+    {
+      "word": "camino.",
+      "start": 3.54,
+      "end": 3.74,
+      "from": 106,
+      "to": 112
+    }
+  ],
+  "pauses": [
+    {
+      "after": "riesgo,",
+      "start": 1.22,
+      "end": 1.6,
+      "dur": 0.38
+    }
+  ]
+}

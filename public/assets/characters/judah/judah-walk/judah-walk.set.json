@@ -1,0 +1,169 @@
+{
+  "set": "judah-walk",
+  "source": "art-inbox/hist-004/JUDA/sprite-walk.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 418,
+    "height": 627
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 220,
+    "y": 604,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    82,
+    10,
+    359,
+    604
+  ],
+  "base": {
+    "name": "contacto-d",
+    "file": "judah-walk-contacto-d.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "bajada-d",
+      "file": "judah-walk-bajada-d.png",
+      "key": "key-chroma",
+      "pinnedTo": "contacto-d",
+      "changedVsPrev": 0.5078,
+      "changedVsBase": 0.5076,
+      "bbox": [
+        61,
+        0,
+        370,
+        615
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "paso-d",
+      "file": "judah-walk-paso-d.png",
+      "key": "key-chroma",
+      "pinnedTo": "bajada-d",
+      "changedVsPrev": 0.4914,
+      "changedVsBase": 0.5084,
+      "bbox": [
+        71,
+        0,
+        370,
+        615
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "contacto-i",
+      "file": "judah-walk-contacto-i.png",
+      "key": "key-chroma",
+      "pinnedTo": "paso-d",
+      "changedVsPrev": 0.514,
+      "changedVsBase": 0.492,
+      "bbox": [
+        70,
+        0,
+        370,
+        615
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "bajada-i",
+      "file": "judah-walk-bajada-i.png",
+      "key": "key-chroma",
+      "pinnedTo": "contacto-i",
+      "changedVsPrev": 0.5268,
+      "changedVsBase": 0.5293,
+      "bbox": [
+        45,
+        0,
+        370,
+        615
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "paso-i",
+      "file": "judah-walk-paso-i.png",
+      "key": "key-chroma",
+      "pinnedTo": "bajada-i",
+      "changedVsPrev": 0.5161,
+      "changedVsBase": 0.5066,
+      "bbox": [
+        72,
+        0,
+        370,
+        615
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 418x627: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-walk.png",
+    "grid": "3x2",
+    "frames": [
+      "contacto-d",
+      "bajada-d",
+      "paso-d",
+      "contacto-i",
+      "bajada-i",
+      "paso-i"
+    ]
+  }
+}

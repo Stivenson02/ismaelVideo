@@ -1,0 +1,41 @@
+{
+  "set": "tamar-father-house",
+  "source": "art-inbox/hist-004/F2",
+  "generated": "2026-11-19",
+  "size": {
+    "width": 1400,
+    "height": 2100
+  },
+  "layers": [
+    {
+      "file": "tamar-father-house-l0.png",
+      "key": "opaque",
+      "opaque": true,
+      "coverage": 1.0,
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "depth": null,
+      "warning": "no se pudo registrar contra full (¿no es una edición de la escena?): se usó sin mover"
+    },
+    {
+      "file": "tamar-father-house-l1.png",
+      "key": "key-chroma",
+      "opaque": false,
+      "coverage": 0.939,
+      "align": {
+        "dx": 1.26,
+        "dy": -0.3,
+        "scale": 0.9996,
+        "rotDeg": -0.003,
+        "cc": 0.9976
+      },
+      "depth": null
+    }
+  ],
+  "stackVsFull": 0.0284
+}

@@ -1,0 +1,165 @@
+{
+  "set": "judah-command",
+  "source": "art-inbox/hist-004/JUDA/sprite-p9.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 418,
+    "height": 627
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 217,
+    "y": 583,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    38,
+    34,
+    396,
+    583
+  ],
+  "base": {
+    "name": "neutral",
+    "file": "judah-command-neutral.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "anticipa",
+      "file": "judah-command-anticipa.png",
+      "key": "key-chroma",
+      "pinnedTo": "neutral",
+      "changedVsPrev": 0.5026,
+      "changedVsBase": 0.4988,
+      "bbox": [
+        19,
+        21,
+        418,
+        597
+      ],
+      "align": {
+        "dx": 5.64,
+        "dy": -1.17,
+        "scale": 1.0045,
+        "rotDeg": 1.146,
+        "cc": 0.8498
+      },
+      "warnings": [
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "extiende",
+      "file": "judah-command-extiende.png",
+      "key": "key-chroma",
+      "pinnedTo": "anticipa",
+      "changedVsPrev": 0.4916,
+      "changedVsBase": 0.5071,
+      "bbox": [
+        0,
+        21,
+        407,
+        594
+      ],
+      "align": {
+        "dx": -2.11,
+        "dy": 1.81,
+        "scale": 1.0125,
+        "rotDeg": 0.216,
+        "cc": 0.8525
+      },
+      "warnings": [
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "senala",
+      "file": "judah-command-senala.png",
+      "key": "key-chroma",
+      "pinnedTo": "extiende",
+      "changedVsPrev": 0.7738,
+      "changedVsBase": 0.6696,
+      "bbox": [
+        1,
+        23,
+        418,
+        594
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "sostiene",
+      "file": "judah-command-sostiene.png",
+      "key": "key-chroma",
+      "pinnedTo": "senala",
+      "changedVsPrev": 0.2937,
+      "changedVsBase": 0.6572,
+      "bbox": [
+        1,
+        21,
+        418,
+        594
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear"
+      ]
+    },
+    {
+      "name": "sostiene-blink",
+      "file": "judah-command-sostiene-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "sostiene",
+      "changedVsPrev": 0.0072,
+      "changedVsBase": 0.6572,
+      "bbox": [
+        1,
+        21,
+        418,
+        594
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear"
+      ]
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 418x627: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-p9.png",
+    "grid": "3x2",
+    "frames": [
+      "neutral",
+      "anticipa",
+      "extiende",
+      "senala",
+      "sostiene",
+      "sostiene-blink"
+    ]
+  }
+}

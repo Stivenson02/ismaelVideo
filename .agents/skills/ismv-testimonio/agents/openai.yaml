@@ -1,0 +1,4 @@
+interface:
+  display_name: "ISMV Testimonio"
+  short_description: "Del testimonio escrito a una historia anonima lista para guion"
+  default_prompt: "Usa $ismv-testimonio para preparar la historia de este testimonio escrito."

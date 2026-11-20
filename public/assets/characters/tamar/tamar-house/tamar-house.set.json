@@ -1,0 +1,108 @@
+{
+  "set": "tamar-house",
+  "source": "art-inbox/hist-004/TAMAR/sprite-p2.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 512,
+    "height": 768
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 261,
+    "y": 759,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    24,
+    14,
+    498,
+    759
+  ],
+  "base": {
+    "name": "espera",
+    "file": "tamar-house-espera.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "espera-blink",
+      "file": "tamar-house-espera-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "espera",
+      "changedVsPrev": 0.0112,
+      "changedVsBase": 0.0112,
+      "bbox": [
+        241,
+        99,
+        350,
+        161
+      ],
+      "align": {
+        "dx": 0.02,
+        "dy": 0.21,
+        "scale": 0.999,
+        "rotDeg": 0.003,
+        "cc": 0.9987
+      },
+      "warnings": []
+    },
+    {
+      "name": "decepcion",
+      "file": "tamar-house-decepcion.png",
+      "key": "key-chroma",
+      "pinnedTo": "espera-blink",
+      "changedVsPrev": 0.1368,
+      "changedVsBase": 0.1303,
+      "bbox": [
+        160,
+        1,
+        490,
+        545
+      ],
+      "align": {
+        "dx": 1.13,
+        "dy": 4.62,
+        "scale": 0.9959,
+        "rotDeg": -0.02,
+        "cc": 0.9942
+      },
+      "warnings": []
+    },
+    {
+      "name": "decepcion-blink",
+      "file": "tamar-house-decepcion-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "decepcion",
+      "changedVsPrev": 0.0076,
+      "changedVsBase": 0.1307,
+      "bbox": [
+        160,
+        1,
+        490,
+        545
+      ],
+      "align": {
+        "dx": 1.11,
+        "dy": 4.74,
+        "scale": 0.9953,
+        "rotDeg": -0.015,
+        "cc": 0.9938
+      },
+      "warnings": []
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 512x768: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-p2.png",
+    "grid": "2x2",
+    "frames": [
+      "espera",
+      "espera-blink",
+      "decepcion",
+      "decepcion-blink"
+    ]
+  }
+}

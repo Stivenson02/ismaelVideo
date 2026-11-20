@@ -1,0 +1,167 @@
+{
+  "set": "tamar-reveal",
+  "source": "art-inbox/hist-004/TAMAR/sprite-p10.png",
+  "generated": "2026-11-19",
+  "canvas": {
+    "width": 418,
+    "height": 627
+  },
+  "scale": 1.0,
+  "anchor": {
+    "x": 209,
+    "y": 615,
+    "note": "centro inferior de la figura"
+  },
+  "bbox": [
+    18,
+    16,
+    400,
+    615
+  ],
+  "base": {
+    "name": "reposo",
+    "file": "tamar-reveal-reposo.png",
+    "key": "key-chroma"
+  },
+  "poses": [
+    {
+      "name": "anticipa",
+      "file": "tamar-reveal-anticipa.png",
+      "key": "key-chroma",
+      "pinnedTo": "reposo",
+      "changedVsPrev": 0.6765,
+      "changedVsBase": 0.6735,
+      "bbox": [
+        6,
+        6,
+        411,
+        626
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "sube",
+      "file": "tamar-reveal-sube.png",
+      "key": "key-chroma",
+      "pinnedTo": "anticipa",
+      "changedVsPrev": 0.5901,
+      "changedVsBase": 0.6686,
+      "bbox": [
+        4,
+        6,
+        417,
+        626
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "muestra",
+      "file": "tamar-reveal-muestra.png",
+      "key": "key-chroma",
+      "pinnedTo": "sube",
+      "changedVsPrev": 0.6451,
+      "changedVsBase": 0.732,
+      "bbox": [
+        6,
+        5,
+        412,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear",
+        "cambia más del 30 % respecto del cuadro anterior: el salto se verá brusco o el generador redibujó la figura (revisar)"
+      ]
+    },
+    {
+      "name": "sostiene",
+      "file": "tamar-reveal-sostiene.png",
+      "key": "key-chroma",
+      "pinnedTo": "muestra",
+      "changedVsPrev": 0.1218,
+      "changedVsBase": 0.7372,
+      "bbox": [
+        6,
+        5,
+        412,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear"
+      ]
+    },
+    {
+      "name": "sostiene-blink",
+      "file": "tamar-reveal-sostiene-blink.png",
+      "key": "key-chroma",
+      "pinnedTo": "sostiene",
+      "changedVsPrev": 0.0221,
+      "changedVsBase": 0.7372,
+      "bbox": [
+        6,
+        5,
+        412,
+        627
+      ],
+      "align": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotDeg": 0.0,
+        "cc": null
+      },
+      "warnings": [
+        "registro fallido: se usó la imagen sin alinear"
+      ]
+    }
+  ],
+  "patches": [],
+  "warnings": [
+    "cada cuadro mide 418x627: se verá blando a pantalla completa; amplía la hoja ×2 en el generador antes de entregarla o usa --scale 2 (más blando)"
+  ],
+  "sheet": {
+    "file": "sprite-p10.png",
+    "grid": "3x2",
+    "frames": [
+      "reposo",
+      "anticipa",
+      "sube",
+      "muestra",
+      "sostiene",
+      "sostiene-blink"
+    ]
+  }
+}

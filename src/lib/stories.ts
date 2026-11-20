@@ -25,6 +25,25 @@ export async function getStories(): Promise<Story[]> {
     });
 }
 
+export type YoutubeProduction = { code: string; name: string; document: string; status: string; format: string; duration: string };
+
+/** Producciones de la línea YouTube (niños y familia) registradas en docs/youtube/INDEX.md. */
+export async function getYoutubeProductions(): Promise<YoutubeProduction[]> {
+  let index = '';
+  try {
+    index = await readFile(path.join(root, 'docs/youtube/INDEX.md'), 'utf8');
+  } catch {
+    return [];
+  }
+  return index
+    .split(/\r?\n/)
+    .filter((line) => line.startsWith('| `YT-'))
+    .map((line) => {
+      const c = line.split('|').slice(1, -1).map((column) => column.trim().replaceAll('`', ''));
+      return { code: c[0], name: c[1], document: c[2], status: c[3], format: c[4], duration: c[5] };
+    });
+}
+
 export async function getStory(code: string) {
   return (await getStories()).find((story) => story.code === code);
 }

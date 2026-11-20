@@ -17,6 +17,8 @@ Todo prompt para generar un personaje, prop, fondo, frame guía o portada debe i
 - La descripción común por sí sola no garantiza identidad exacta entre generaciones. Para una secuencia que depende de que el rostro no cambie —como variantes de expresión registradas— se trabaja desde un mismo diseño base o se generan las variantes juntas; no se presenta continuidad exacta como garantizada por texto.
 - La frase “sin elementos modernos” se aplica a los beats bíblicos. Si el guion aprobado tiene una escena cotidiana actual, el prompt declara esa excepción de forma explícita y limita lo moderno únicamente a esa escena; conserva el mismo lenguaje 2D, luz y paleta.
 - No generar texto ni logotipos dentro del arte. Añadir subtítulos, títulos de portada y el símbolo oficial como capas editables después.
+- **Prompts de edición** (poses, expresiones, capas sacadas de una escena): no repiten la Dirección común. Adjuntan la imagen aprobada y usan la plantilla de edición de [`technical/ANIMACION-POR-CAPAS.md`](technical/ANIMACION-POR-CAPAS.md) §4: conservar todo igual y cambiar solo lo indicado. Repetir el estilo invita al generador a redibujar la figura, y eso rompe la animación.
+- **Fondo de generación:** personajes y props sobre verde liso `#00FF00`; capas de escenario con vegetación verde saturada sobre magenta `#FF00FF`. Ninguna ficha de personaje usa el color del croma. La preproducción lo convierte en alfa real.
 
 ## Técnicas de animación
 
@@ -28,7 +30,18 @@ Todo prompt para generar un personaje, prop, fondo, frame guía o portada debe i
 - Mantener pocos detalles, siluetas legibles y composición con espacio para subtítulos y textos.
 - Reservar cambios de luz, sombra y movimiento para los momentos narrativos importantes.
 
+### Animación por capas desde una base (método vigente desde 2026-11-19)
+
+Cada personaje tiene una **base de diseño aprobada**. Cada movimiento de un plano se genera como **hoja de sprites**: todos los cuadros del gesto en una sola imagen, con los cambios de cara y los parpadeos, usando la base como referencia. Es la forma preferida por la persona, porque dentro de una imagen el personaje sale consistente. Cuando haga falta más resolución por cuadro, la alternativa son **ediciones de la base**. La preproducción (`tools/ismv_prep.py`) recorta el croma, alinea los cuadros y fija lo que no cambió. Así el pelo, la ropa y el cuerpo no "hierven" entre cuadros. Remotion cambia los cuadros a 12 fps, sostiene con respiración y parpadeos, y mueve la cámara. Detalle, reglas de generación, comandos y límites: [`technical/ANIMACION-POR-CAPAS.md`](technical/ANIMACION-POR-CAPAS.md).
+
+- Una hoja por movimiento y plano. Dos hojas del mismo personaje no coinciden exactamente: el cambio de una a otra cae en un corte, un movimiento de cámara o una oclusión. Lo mismo vale para un giro de cabeza o de cuerpo.
+- Gestos con cambio de forma (manos que se separan, tela que se despliega): 4–6 cuadros. Interpolar dibujos distintos produce doble exposición; la prueba del 2026-11-19 lo mostró con el celular de HIST-004.
+- La luz no cambia dentro de una hoja: antorchas, noche o día se agregan en la animación.
+- Antes de animar, revisar la hoja de QA y el video corto de cada gesto que entrega la preproducción.
+
 ### Hojas de expresiones / sprites faciales
+
+**Desde 2026-11-19, las expresiones para animar van dentro de la hoja de sprites del plano**, como cuadros del mismo cuerpo, o como parches editados sobre la base (ver la sección anterior). Una hoja de solo cabezas no encaja sobre un cuerpo; queda como **referencia de actuación** o para un primer plano aislado con corte. Lo que sigue aplica cuando se use una hoja de cabezas.
 
 Para primeros planos con cambios de emoción, se puede preparar una hoja de expresiones (sprite sheet): varias versiones del mismo rostro en una cuadrícula de 2 × 3 o 3 × 3. Cada celda contiene una expresión recortable; en montaje se alterna o superpone la cara sobre una base fija del personaje para lograr animación limitada sin redibujar el cuerpo entero.
 
@@ -94,6 +107,25 @@ Partir de paisajes terrosos y apagados para los escenarios, con sombras profunda
 - Sonido elegido para la firma recurrente: `public/assets/audio/sfx/mixkit-orchestral-happy-prompt-636.wav` (4,05 s originales). Existe una versión de hasta 3 s para la placa anterior; la versión de ~1 s se prepara en el plan del primer episodio que la use. La persona aprobó usarlo como sonido común; revisar que el recorte y la mezcla funcionen en el render de revisión.
 - **Marca de agua (opcional, pendiente de diseño):** el símbolo de Ismael pequeño y semitransparente durante el video, fuera de las zonas de interfaz. El logo propio no reduce el alcance en Instagram.
 
+## Línea de testimonios (estilo moderno)
+
+Los testimonios reales ([`testimonios/README.md`](testimonios/README.md)) usan la misma técnica: hojas de sprites, capas, cámara y croma verde. Pero el estilo es **2D moderno**, como las referencias de `public/assets/concepts/testimonios/estilo/` (2026-11-19):
+- ilustración plana con sombreado suave y contornos limpios;
+- personajes actuales expresivos;
+- luz cinematográfica con contraste de frío (pantallas, noche, azul) y cálido (bordes naranja, esperanza).
+
+**Base común para prompts de testimonios.** Se copia completa en cada prompt de generación de esta línea, en lugar de la Dirección común bíblica:
+
+> Dirección común testimonios = Animación 2D moderna de recortes, ilustración plana con sombreado suave y contornos limpios, personajes actuales expresivos y cercanos, capas separables. Iluminación cinematográfica con contraste de luz fría azulada y acentos cálidos naranja; atmósfera íntima y emotiva, con esperanza. Detalle sencillo, siluetas claras, composición legible en pantalla vertical. Sin realismo fotográfico, sin 3D, sin anime exagerado, sin texto, sin letras, sin logotipos ni marcas. Mantener coherencia visual con las imágenes de referencia.
+
+- **Adjuntar como referencia de estilo** al menos una imagen de `public/assets/concepts/testimonios/estilo/` en los prompts de escenas y bases.
+- **Anonimato por defecto.** El personaje es genérico: edad aparente, rasgos y ropa propios del personaje, no de la persona real. Solo con parecido autorizado se adjuntan las fotos que ella entregó, y el personaje se le parece sin ser un retrato fotográfico. Los terceros (familia, médicos, otras personas) siempre son genéricos o siluetas.
+- **Sin datos reales en el arte:** nada de nombres, documentos, diagnósticos legibles, marcas, logos de hospitales o empresas, ni placas o direcciones.
+- **Momentos duros** (enfermedad, hospital, violencia, adicción, duelo): sobriedad. Se cuentan con encuadre, luz y metáfora (sombra que crece, cuarto que se oscurece, manos, objetos), no con imágenes gráficas. Nada de sangre ni heridas.
+- **Lo que la persona atribuye a Dios** se sugiere con luz, calor y color (una luz cálida que entra, el frío que cede), como en "Seres celestiales y lo sobrenatural". No se dibuja a Jesús ni a ángeles como figura, salvo decisión explícita.
+- **La persona narra, no habla en cuadro.** La voz (leída por ella o recreada) es narración en primera persona: el personaje no mueve la boca al ritmo del audio, salvo un plano pensado como "la persona contando hoy" y acordado en el plan.
+- **"Testimonio real"** (y "nombre cambiado" / "voz recreada" si aplica) aparece en pantalla como texto compuesto en Remotion, nunca dentro del arte.
+
 ## Aplicación en el flujo
 
 - **Ideas e investigación:** no inventar imágenes como hechos bíblicos; separar lo que narra el texto de las decisiones visuales.
@@ -101,7 +133,8 @@ Partir de paisajes terrosos y apagados para los escenarios, con sombras profunda
 - **Gancho visual:** el primer fotograma muestra el caso moderno concreto (con la excepción explícita de "sin elementos modernos" solo para esa escena) o el momento más tenso del relato, con acción o rostro legible, que se entienda sin sonido y funcione como portada. Duración 0–3 s. Sin plano de establecimiento lento ni personaje diminuto. Preparar solo los personajes, fondos y objetos que esa acción requiera.
 - **Ritmo:** un evento visual cada 2–3 s (corte, movimiento de cámara, gesto con sprite, expresión, capa o texto clave), alternando escalas de plano. Los sprites marcan momentos (gancho, reacción a cada giro, revelación) y no deben mover todo de forma constante. Sobre animación limitada con sprites (12 fps en "doses", anticipación y asentamiento, contraste de movimiento), ver §4.3 de `docs/investigacion/RETENCION-REELS.md`.
 - **Zonas seguras (1080 × 1920):** dejar libres ~250 px arriba, ~670 px abajo y ~120 px a la derecha. Rostros y acción en el tercio central; subtítulos por encima del tercio inferior.
-- **Desglose y recursos:** traducir cada beat a planos, capas, poses y elementos realmente necesarios. Evitar pedir arte que no se usa.
+- **Desglose y recursos:** traducir cada beat a planos, capas, poses y elementos realmente necesarios. Evitar pedir arte que no se usa. Los prompts se entregan en orden de creación, con la tabla de entrega (`<slug>-prompts.md`).
+- **Preproducción:** recortar, registrar y estabilizar las piezas, revisarlas en QA y medir la voz. La hoja de animación cuadro a cuadro sale de los tiempos reales de la voz (`ismv-preproduccion`).
 - **Arte:** preparar capas reutilizables y fondos del tamaño que requiera el movimiento de cámara; dejar vacíos donde irán personajes y textos.
 - **Producción:** buscar profundidad con desplazamientos de capas, movimientos suaves y encuadres; no añadir efectos por decoración.
 
